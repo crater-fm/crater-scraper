@@ -1,26 +1,22 @@
 import nts_scraper as scrape_nts
-import sqlite3 as lite
+import psychopg2
 from csv import reader
+from decouple import config
 
-## specify database filename
-## TODO: remove this hardcoded filename
-sqlite_filename = 'crater-app.db'
+# Set environmental variables
+DB_HOST = config('DB_HOST')
+DB_NAME = config('DB_NAME')
+DB_USER = config('DB_USER')
+DB_PASSWORD = config('DB_PASSWORD')
 
-## connect to SQLite database
-con = None
-# Error handling for connection status
-try:
-    con = lite.connect(sqlite_filename)
-    cur = con.cursor()
-    cur.execute('SELECT SQLITE_VERSION()')
-    data = cur.fetchone()
-except (lite.Error) as error:
-    print("Error %s:" % e.args[0])
-    sys.exit(1)
-finally:
-    if con:
-        con.close()
-con = lite.connect(sqlite_filename)
+## Connect to PostgreSQL database
+conn = psychopg2.connect(
+    host = DB_HOST,
+    database = DB_NAME,
+    user = DB_USER,
+    password = DB_PASSWORD)
+
+'''
 
 ## read CSV containing URLs
 ## TODO: remove this hardcoded filename
@@ -51,3 +47,5 @@ for index, url in enumerate(url_list):
         # wait before scraping next URL
         time_wait = 1  # wait time in seconds
         time.sleep(time_wait)
+        
+'''
