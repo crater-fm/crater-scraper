@@ -1,0 +1,1 @@
+SELECT Setlist_Name AS Setlist_Name_2 FROM Setlist WHERE Artist_name = "Joni Mitchell";
