@@ -1,0 +1,2 @@
+// To start psql database (on local)
+psql -d crater -U crater_admin
