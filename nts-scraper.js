@@ -3,8 +3,8 @@
 const fs = require('fs')
 const axios = require('axios')
 const cheerio = require('cheerio');
-const pretty = require('pretty');
 const Pool = require('pg').Pool;
+const { Sequelize } = require('sequelize');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -54,10 +54,18 @@ async function scrapeNTS(url) {
 
 var testURL = 'https://www.nts.live/shows/world-in-flo-motion/episodes/world-in-flo-motion-25th-january-2021';
 
-// TEMP: read HTML markup from test file, TODO: read from URL instead
-let markup = fs.readFileSync('flo-motion.html', 'utf8');
-
 // Initialize array of skipped urls
 var skippedURL = new Array();
+
+// Connect to Database using Sequelize ORM
+const sequelize = new Sequelize(DB_URL)
+// Test the connection
+try {
+    await sequelize.authenticate();
+    console.log('Connection established successfully.');
+} catch (error) {
+    console.error('Unable to connect to the database:', error);
+}
+
 
 scrapeNTS(testURL, markup)
