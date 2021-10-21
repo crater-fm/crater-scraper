@@ -4,7 +4,6 @@ const fs = require('fs')
 const axios = require('axios')
 const cheerio = require('cheerio');
 const Pool = require('pg').Pool;
-const { Sequelize } = require('sequelize');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -38,12 +37,55 @@ async function scrapeNTS(url) {
             skippedURL.push(url)
         }
         // Parse JSON string into Javascript object
-        var episodeData = JSON.parse(reactState)
-        console.log(episodeData.episode.tracklist)
+        var reactStateData = JSON.parse(reactState)
+        var episode = reactStateData.episode
 
-        // Do stuff with the object episodeData here!
-        // E.g. parse & export to PostgreSQL
+        // Connect to PostgreSQL
+        const pool = new Pool({
+            user: process.env.DB_USER,
+            host: process.env.DB_HOST,
+            database: process.env.DB_NAME,
+            password: process.env.DB_PASSWORD,
+            port: process.env.DB_PORT,
+        });
 
+        // Function to check if episode, artist, song, genre already exist in the database
+        async function getItem(selectColumn, table, compareColumn, compareValue) {
+            const text = `
+            SELECT $1
+            FROM $2
+            WHERE $3 = $4`;
+            const values = [selectColumn, table, compareColumn, compareValue];
+            return pool.query(text, values);
+        }
+
+        async function postItem(selectColumn, table, compareColumn, compareValue) {
+            const text = `
+            SELECT $1
+            FROM $2
+            WHERE $3 = $4`;
+            const values = [selectColumn, table, compareColumn, compareValue];
+            return pool.query(text, values);
+        }
+
+        // Function to add a single item to the database (e.g. song, artist, genre) and return the inserted row
+        async function postItem(tableName, columnName, columnValue) {
+            const text = `
+            INSERT INTO $1($2)
+            VALUES ($3)
+            RETURNING *`;
+            const values = [tableName, columnName, columnValue];
+            return pool.query(text, values);
+        }
+
+        async function postEpisode(episodeName, episodeDescription, episodeDate, episodeURL, episodePlatform) {
+            const text = `
+            INSERT INTO episode (episode_name, episode_description, episode_date, episode_url, episode_platform)
+            VALUES ($1, $2, $3, $4, $5)
+            RETURNING *`;
+            const values = [episodeName, episodeDescription, episodeDate, episodeURL, episodePlatform];
+            return pool.query(text, values);
+        }
 
     }
     catch (err) {
@@ -57,15 +99,4 @@ var testURL = 'https://www.nts.live/shows/world-in-flo-motion/episodes/world-in-
 // Initialize array of skipped urls
 var skippedURL = new Array();
 
-// Connect to Database using Sequelize ORM
-const sequelize = new Sequelize(DB_URL)
-// Test the connection
-try {
-    await sequelize.authenticate();
-    console.log('Connection established successfully.');
-} catch (error) {
-    console.error('Unable to connect to the database:', error);
-}
-
-
-scrapeNTS(testURL, markup)
+scrapeNTS(testURL)

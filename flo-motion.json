@@ -1,0 +1,461 @@
+{
+    "artist": {},
+    "collections": {},
+    "episodePlayer": {
+        "episodePlayerIsOpen": false,
+        "trackUrl": null,
+        "episodePathname": null,
+        "thumbnailUrl": null,
+        "episodeName": null,
+        "analyticsOrigin": null,
+        "isPlaying": false,
+        "pauseEpisode": false
+    },
+    "liveHeader": {
+        "isOpen": false
+    },
+    "mixtapes": {},
+    "radioCollections": [],
+    "radioPlayer": {
+        "clientName": "NTSWebApp",
+        "streams": {
+            "stream_one": {
+                "type": "live",
+                "id": "stream_one",
+                "name": "Channel 1",
+                "href": "https://stream-relay-geo.ntslive.net/stream"
+            },
+            "stream_two": {
+                "type": "live",
+                "id": "stream_two",
+                "name": "Channel 2",
+                "href": "https://stream-relay-geo.ntslive.net/stream2"
+            }
+        }
+    },
+    "weeklySchedule": {
+        "channelData": {
+            "0": [],
+            "1": [],
+            "2": []
+        },
+        "isError": false,
+        "isLoading": true,
+        "channelExpiresMs": {
+            "0": 0,
+            "1": 0,
+            "2": 0
+        }
+    },
+    "schedule": {
+        "oneNow": {
+            "title": "",
+            "description": "",
+            "description_html": "",
+            "location": "",
+            "background_large": "https://media.ntslive.co.uk/resize/1600x1600/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "image": "https://media.ntslive.co.uk/resize/800x800/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "image_medium": "https://media.ntslive.co.uk/resize/400x400/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "thumbnail": "https://media.ntslive.co.uk/resize/100x100/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "timeslot_html": "",
+            "frequency": "",
+            "facebook": "",
+            "twitter": "",
+            "instagram": "",
+            "soundcloud": "",
+            "website": "",
+            "website_text": "",
+            "path": null
+        },
+        "oneNext": {
+            "title": "",
+            "description": "",
+            "description_html": "",
+            "location": "",
+            "background_large": "https://media.ntslive.co.uk/resize/1600x1600/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "image": "https://media.ntslive.co.uk/resize/800x800/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "image_medium": "https://media.ntslive.co.uk/resize/400x400/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "thumbnail": "https://media.ntslive.co.uk/resize/100x100/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "timeslot_html": "",
+            "frequency": "",
+            "facebook": "",
+            "twitter": "",
+            "instagram": "",
+            "soundcloud": "",
+            "website": "",
+            "website_text": "",
+            "path": null
+        },
+        "twoNow": {
+            "title": "",
+            "description": "",
+            "description_html": "",
+            "location": "",
+            "background_large": "https://media.ntslive.co.uk/resize/1600x1600/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "image": "https://media.ntslive.co.uk/resize/800x800/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "image_medium": "https://media.ntslive.co.uk/resize/400x400/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "thumbnail": "https://media.ntslive.co.uk/resize/100x100/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "timeslot_html": "",
+            "frequency": "",
+            "facebook": "",
+            "twitter": "",
+            "instagram": "",
+            "soundcloud": "",
+            "website": "",
+            "website_text": "",
+            "path": null
+        },
+        "twoNext": {
+            "title": "",
+            "description": "",
+            "description_html": "",
+            "location": "",
+            "background_large": "https://media.ntslive.co.uk/resize/1600x1600/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "image": "https://media.ntslive.co.uk/resize/800x800/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "image_medium": "https://media.ntslive.co.uk/resize/400x400/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "thumbnail": "https://media.ntslive.co.uk/resize/100x100/25d8f388-3ecc-4558-8d4d-bedca45134c9_1434047279.jpg",
+            "timeslot_html": "",
+            "frequency": "",
+            "facebook": "",
+            "twitter": "",
+            "instagram": "",
+            "soundcloud": "",
+            "website": "",
+            "website_text": "",
+            "path": null
+        }
+    },
+    "radioLandingShows": {},
+    "viewportType": {},
+    "footerPlayer": {
+        "isOpen": false,
+        "isExpanded": false
+    },
+    "networkStatus": {
+        "networkIsOnline": true
+    },
+    "exploreGenre": null,
+    "genres": [],
+    "moods": [],
+    "sheet": {
+        "displaySheet": false,
+        "article": null,
+        "sheetItems": []
+    },
+    "show": {},
+    "videoPlayer": {
+        "displayVideoPlayer": false
+    },
+    "episode": {
+        "status": "published",
+        "updated": "2021-01-26T10:53:36+00:00",
+        "name": "World in Flo Motion",
+        "description": "THIS SHOW IS ON PAUSE! For now … while I do the breakfast show which you can listen to here https://www.nts.live/shows/breakfast\nA different pace, a warmer touch. \nNever still, always moving; it's more than a feeling - the world looks better in Flo Motion. Hosted always and forever by Flo Dill. ",
+        "description_html": "<h3>THIS SHOW IS ON PAUSE! For now … while I do the breakfast show which you can listen to here https://www.nts.live/shows/breakfast</h3>\n<p>A different pace, a warmer touch. </p>\n<p>Never still, always moving; it's more than a feeling - the world looks better in Flo Motion. Hosted always and forever by Flo Dill. </p>",
+        "facebook": null,
+        "twitter": "http://www.twitter.com/flollid",
+        "website": "http://instagram.com/flollid",
+        "moods": [],
+        "genres": [
+            {
+                "id": "genres-altrockpunk-indie",
+                "value": "Indie Rock"
+            },
+            {
+                "id": "genres-other-leftfield-pop",
+                "value": "Leftfield Pop"
+            },
+            {
+                "id": "genres-rock-soft-rock",
+                "value": "Soft Rock"
+            }
+        ],
+        "location_short": "LDN",
+        "location_long": "London",
+        "intensity": null,
+        "media": {
+            "background_large": "https://media2.ntslive.co.uk/resize/1600x1600/15df19e1-3331-407a-9ab9-e4148df16976_1611619200.jpeg",
+            "background_medium_large": "https://media2.ntslive.co.uk/resize/800x800/15df19e1-3331-407a-9ab9-e4148df16976_1611619200.jpeg",
+            "background_medium": "https://media.ntslive.co.uk/resize/400x400/15df19e1-3331-407a-9ab9-e4148df16976_1611619200.jpeg",
+            "background_small": "https://media3.ntslive.co.uk/resize/200x200/15df19e1-3331-407a-9ab9-e4148df16976_1611619200.jpeg",
+            "background_thumb": "https://media3.ntslive.co.uk/resize/100x100/15df19e1-3331-407a-9ab9-e4148df16976_1611619200.jpeg",
+            "picture_large": "https://media2.ntslive.co.uk/resize/1600x1600/15df19e1-3331-407a-9ab9-e4148df16976_1611619200.jpeg",
+            "picture_medium_large": "https://media2.ntslive.co.uk/resize/800x800/15df19e1-3331-407a-9ab9-e4148df16976_1611619200.jpeg",
+            "picture_medium": "https://media.ntslive.co.uk/resize/400x400/15df19e1-3331-407a-9ab9-e4148df16976_1611619200.jpeg",
+            "picture_small": "https://media3.ntslive.co.uk/resize/200x200/15df19e1-3331-407a-9ab9-e4148df16976_1611619200.jpeg",
+            "picture_thumb": "https://media3.ntslive.co.uk/resize/100x100/15df19e1-3331-407a-9ab9-e4148df16976_1611619200.jpeg"
+        },
+        "episode_alias": "world-in-flo-motion-25th-january-2021",
+        "show_alias": "world-in-flo-motion",
+        "broadcast": "2021-01-25T12:00:00+00:00",
+        "mixcloud": "https://www.mixcloud.com/NTSRadio/world-in-flo-motion-25th-january-2021/",
+        "audio_sources": [
+            {
+                "url": "https://www.mixcloud.com/NTSRadio/world-in-flo-motion-25th-january-2021/",
+                "source": "mixcloud"
+            }
+        ],
+        "audioSourceHref": "https://www.mixcloud.com/NTSRadio/world-in-flo-motion-25th-january-2021/",
+        "broadcast_formatted": "25.01.21",
+        "broadcast_formatted_long": "25th January 2021",
+        "path": "/shows/world-in-flo-motion/episodes/world-in-flo-motion-25th-january-2021",
+        "showPath": "/shows/world-in-flo-motion",
+        "artistsPresent": [],
+        "artistsNotPresent": [],
+        "tracklist": [
+            {
+                "title": "Happy Daze",
+                "mainArtists": [
+                    {
+                        "name": "Spinner Dolphins",
+                        "role": "",
+                        "id": 101576,
+                        "artist_alias": "spinner-dolphins"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            },
+            {
+                "title": "Ooh La La  La",
+                "mainArtists": [
+                    {
+                        "name": "Chuck Edwards",
+                        "role": "",
+                        "id": 54637,
+                        "artist_alias": "chuck-edwards"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            },
+            {
+                "title": "I Meditate Each Day",
+                "mainArtists": [
+                    {
+                        "name": "Steve Leach",
+                        "role": "",
+                        "id": 48627,
+                        "artist_alias": "steve-leach"
+                    },
+                    {
+                        "name": "The Crystal Grass Orchestra",
+                        "role": "",
+                        "id": 26109,
+                        "artist_alias": "crystal-grass"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            },
+            {
+                "title": "Bluebird",
+                "mainArtists": [
+                    {
+                        "name": "The Pea Green Philharmonic Pullover Set",
+                        "role": "",
+                        "id": 101577,
+                        "artist_alias": "the-pea-green-philharmonic-pullover-set"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            },
+            {
+                "title": "Lonely Together",
+                "mainArtists": [
+                    {
+                        "name": "Smokey And His Sister",
+                        "role": "",
+                        "id": 59368,
+                        "artist_alias": "smokey-and-his-sister"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            },
+            {
+                "title": "She's Married Already",
+                "mainArtists": [
+                    {
+                        "name": "McKinley Mitchell",
+                        "role": "",
+                        "id": 36661,
+                        "artist_alias": "mckinley-mitchell"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            },
+            {
+                "title": "When I Needed You",
+                "mainArtists": [
+                    {
+                        "name": "The Jam",
+                        "role": "",
+                        "id": 5815,
+                        "artist_alias": "the-jam"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            },
+            {
+                "title": "Man Is Not A Bird",
+                "mainArtists": [
+                    {
+                        "name": "Broadcast",
+                        "role": "",
+                        "id": 7555,
+                        "artist_alias": "broadcast"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            },
+            {
+                "title": "I Went On A Chourney",
+                "mainArtists": [
+                    {
+                        "name": "Julian Cope",
+                        "role": "",
+                        "id": 15180,
+                        "artist_alias": "julian-cope"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            },
+            {
+                "title": "That’s Entertainment  ",
+                "mainArtists": [
+                    {
+                        "name": "The Jam",
+                        "role": "",
+                        "id": 5815,
+                        "artist_alias": "the-jam"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            },
+            {
+                "title": "Sunspots",
+                "mainArtists": [
+                    {
+                        "name": "Julian Cope",
+                        "role": "",
+                        "id": 15180,
+                        "artist_alias": "julian-cope"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            },
+            {
+                "title": "Jukebox",
+                "mainArtists": [
+                    {
+                        "name": "The Mistakes",
+                        "role": "",
+                        "id": 49886,
+                        "artist_alias": "the-mistakes"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            },
+            {
+                "title": "Grace",
+                "mainArtists": [
+                    {
+                        "name": "Look Blue Go Purple",
+                        "role": "",
+                        "id": 41902,
+                        "artist_alias": "look-blue-go-purple"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            },
+            {
+                "title": "Baby Let’s Swing / The Last Thing You Said / Don’t Tie My Hands",
+                "mainArtists": [
+                    {
+                        "name": "Todd Rundgren",
+                        "role": "",
+                        "id": 5491,
+                        "artist_alias": "todd-rundgren"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            },
+            {
+                "title": "Happy Daze",
+                "mainArtists": [
+                    {
+                        "name": "Spinner Dolphins",
+                        "role": "",
+                        "id": 101576,
+                        "artist_alias": "spinner-dolphins"
+                    }
+                ],
+                "featuringArtists": [],
+                "remixArtists": []
+            }
+        ]
+    },
+    "ntsPicks": {
+        "episodes": [],
+        "filterState": {},
+        "isLoading": false
+    },
+    "recentlyAdded": {
+        "episodes": [],
+        "filterState": {
+            "musicOnly": false,
+            "genres": [],
+            "mood": null
+        },
+        "isLoading": true
+    },
+    "snackbar": {
+        "showSnackbar": false,
+        "snackbarContent": null,
+        "snackbarTimeout": null
+    },
+    "liveTracks": {
+        "tracklist": [],
+        "isError": false,
+        "isReady": false
+    },
+    "perks": {
+        "perksList": [],
+        "perkTitlesSeen": [],
+        "isLoading": true,
+        "titlesSeenIsLoading": true,
+        "error": false
+    },
+    "subscriptions": {
+        "list": [],
+        "isLoading": true,
+        "error": false
+    },
+    "subscriptionsDetails": {},
+    "supporters": {
+        "currency": "gbp",
+        "currencyIsSet": false
+    },
+    "userStatus": {
+        "hasActiveSubscription": false,
+        "isHost": false,
+        "isNtsFriend": false,
+        "isReady": false,
+        "isStaff": false,
+        "isStaffOrHost": false
+    },
+    "authModal": {
+        "isOpen": false
+    }
+};
