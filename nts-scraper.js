@@ -51,35 +51,16 @@ async function scrapeNTS(url) {
 
 
     // Function to check if episode, artist, song, genre already exist in the database
-    async function getItem(selectColumn, table, compareColumn, compareValue) {
+    async function getEpisode(url, pool) {
         const text = `
-            SELECT $1
-            FROM $2
-            WHERE $3 = $4`;
-        const values = [selectColumn, table, compareColumn, compareValue];
+            SELECT episode_url
+            FROM episode
+            WHERE episode_url = $1`;
+        const values = [url];
         return pool.query(text, values);
     }
 
-    async function postItem(selectColumn, table, compareColumn, compareValue) {
-        const text = `
-            SELECT $1
-            FROM $2
-            WHERE $3 = $4`;
-        const values = [selectColumn, table, compareColumn, compareValue];
-        return pool.query(text, values);
-    }
-
-    // Function to add a single item to the database (e.g. song, artist, genre) and return the inserted row
-    async function postItem(tableName, columnName, columnValue) {
-        const text = `
-            INSERT INTO $1($2)
-            VALUES ($3)
-            RETURNING *`;
-        const values = [tableName, columnName, columnValue];
-        return pool.query(text, values);
-    }
-
-    async function postEpisode(episodeName, episodeDescription, episodeDate, episodeURL) {
+    async function postEpisode(episodeName, episodeDescription, episodeDate, episodeURL, pool) {
         const text = `
             INSERT INTO episode (episode_name, episode_description, episode_date, episode_url)
             VALUES ($1, $2, $3, $4)
@@ -96,29 +77,39 @@ async function scrapeNTS(url) {
 
 
 
-// RUN FUNCTIONS SECTION
-    (async () => {
-    // Connect to PostgreSQL
-    const pool = new Pool({
-        user: process.env.DB_USER,
-        host: process.env.DB_HOST,
-        database: process.env.DB_NAME,
-        password: process.env.DB_PASSWORD,
-        port: process.env.DB_PORT,
-    });
+    // RUN FUNCTIONS SECTION
+    try {
+        // Connect to PostgreSQL
+        const pool = new Pool({
+            user: process.env.DB_USER,
+            host: process.env.DB_HOST,
+            database: process.env.DB_NAME,
+            password: process.env.DB_PASSWORD,
+            port: process.env.DB_PORT,
+        });
 
-    const episode = await scrapeHtmlData(url);
+        const episode = await scrapeHtmlData(url);
 
-    const duplicateEpisodeUrl = await getItem('episode-url', 'episode', 'episode_url', url)
-    if (duplicateEpisodeUrl) { // skip if duplicate
-        console.log('URL already exists in database')
-    } else { // Post new episode to database
-        var postEpResult = await postEpisode(episode.name, episode.description, episode.updated, url)
-        console.log(postEpResult)
+        const duplicateEpisodeUrl = await getEpisode(url, pool)
+
+        if (duplicateEpisodeUrl.rows.length > 0) { // skip if duplicate
+            console.log('URL already exists in database')
+        } else { // Post new episode to database
+
+            const postEpisodeResult = await postEpisode(episode.name, episode.description, episode.updated, url, pool)
+            console.log('Added the following to table "episode": ')
+            console.log(postEpisodeResult.rows[0])
+
+
+
+        }
+
+        await pool.end();
+    }
+    catch (err) {
+        console.error(err)
     }
 
-    await pool.end();
-    })
 }
 
 
