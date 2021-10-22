@@ -1,0 +1,9 @@
+SELECT
+	song_artist.song_artist_id,
+	artist.artist_name,
+	song.song_name
+FROM song_artist
+INNER JOIN
+	song ON song_artist.song_id = song.song_id
+INNER JOIN
+	artist ON song_artist.artist_id = artist.artist_id;

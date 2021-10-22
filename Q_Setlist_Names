@@ -1,0 +1,16 @@
+SELECT
+	setlist.setlist_track_id,
+	artist.artist_name,
+	song.song_name,
+	episode.episode_name,
+	setlist.setlist_seq
+FROM
+	setlist
+INNER JOIN
+	song_artist ON setlist.song_artist_id = song_artist.song_artist_id
+INNER JOIN
+	episode ON setlist.episode_id = episode.episode_id
+INNER JOIN
+	song ON song_artist.song_id = song.song_id
+INNER JOIN
+	artist ON song_artist.artist_id = artist.artist_id;

@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-
 const fs = require('fs')
-//const ntsScraper = require('ntsScraper.js');
+const scraper = require('./nts-scraper.js');
 const Pool = require('pg').Pool;
 const dotenv = require('dotenv');
 dotenv.config();
@@ -35,7 +34,7 @@ pool.query('SELECT episode_url FROM episode ORDER BY episode_id ASC', (error, re
                 // If it hasn't already been scraped into the database, then run the scraper function on the URL
                 else {
 
-                    //scrapeNTS(item)
+                    var result = scraper.scrapeNTS(item)
                     
                     console.log(`URL scraped into db: ${item}`)
                     // Wait before scraping the next URL to avoid getting IP flagged
