@@ -15,32 +15,32 @@ module.exports = {
                 // Fetch HTML from URL
                 const { data } = await axios.get(url);
                 // Load html markup
-                const $ = cheerio.load(data);
-                var reactState = $("#react-state").html();
+                const $ = await cheerio.load(data);
+                var reactState = await $("#react-state").html();
                 // cut off the first and last bits of the string, leaving only JSON
                 var PREFIX = "window._REACT_STATE_ = ";
                 var SUFFIX = ';'
-
-                if (reactState.startsWith(PREFIX)) { // Check if HTML element starts with the normal prefix, and remove if so
-                    reactState = reactState.replace(PREFIX, '');
-                    if (reactState.slice(-1) === ";") {  // Check if HTML element starts with the normal suffix, and remove if so
-                        reactState = reactState.slice(0, -1);
+                if (length.reactState === 0) {
+                    // No element with ID react-state, skip
+                    console.log('No html element found called react-state')
+                } else {
+                    if (reactState.startsWith(PREFIX)) { // Check if HTML element starts with the normal prefix, and remove if so
+                        reactState = reactState.slice(PREFIX.length);
+                        if (reactState.slice(-1) === ";") {  // Check if HTML element starts with the normal suffix, and remove if so
+                            reactState = reactState.slice(0, -1);
+                        }
+                        else {
+                            // Skip this URL because it doesn't match normal format, and record the skipped URL
+                            console.log("URL skipped because HTML does not match standard format")
+                        }
                     }
                     else {
                         // Skip this URL because it doesn't match normal format, and record the skipped URL
                         console.log("URL skipped because HTML does not match standard format")
-                        skippedURL.push(url)
                     }
+
+                    return reactState
                 }
-                else {
-                    // Skip this URL because it doesn't match normal format, and record the skipped URL
-                    console.log("URL skipped because HTML does not match standard format")
-                    skippedURL.push(url)
-                }
-                // Parse JSON string into Javascript object
-                var reactStateData = JSON.parse(reactState)
-                var episode = reactStateData.episode
-                return episode
             }
             catch (err) {
                 console.error(err)
@@ -190,7 +190,9 @@ module.exports = {
                 port: process.env.DB_PORT,
             });
 
-            const episode = await scrapeHtmlData(url);
+            const reactState = await scrapeHtmlData(url)
+            const reactStateData = await JSON.parse(reactState)
+            const episode = reactStateData.episode
 
             var getEpisodeResult = await getEpisode(url, pool)
 
@@ -212,7 +214,7 @@ module.exports = {
                     var addGenreResult = await addGenre(genre.value, genre.id, pool)
                 }
                 // Find the id of the current genre
-                var currentGenreId = await getGenre(genre.value,pool)
+                var currentGenreId = await getGenre(genre.value, pool)
                 var currentGenreId = currentGenreId.rows[0].genre_id
                 // Check if episode-genre relation already exists
                 var getEpisodeGenreResult = await getEpisodeGenre(currentEpisodeId, currentGenreId, pool)
