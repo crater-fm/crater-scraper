@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-// Function to scrape tracklist data from NTS Radio (nts.live) radio show episodes and write to PostgreSQL database
+// Function to scrape tracklist data from NTS Radio (nts.live) radio show episodes and write to PostgreSQL 
+// Author: Drew Nollsch, https://github.com/drex04
+
 const fs = require('fs')
 const axios = require('axios')
 const cheerio = require('cheerio');
