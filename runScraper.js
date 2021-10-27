@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+// Script to run the episode page scraper & write to Postgres
+// Author: Drew Nollsch, https://github.com/drex04
+
 const fs = require('fs')
 const scraper = require('./nts-scraper.js');
 const Pool = require('pg').Pool;
