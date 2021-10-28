@@ -7,6 +7,7 @@ const axios = require('axios')
 const cheerio = require('cheerio');
 const Pool = require('pg').Pool;
 const dotenv = require('dotenv');
+const { resolve } = require('path');
 dotenv.config();
 
 module.exports = {
@@ -15,21 +16,33 @@ module.exports = {
         async function scrapeHtmlData(url) {
             try {
                 // Fetch HTML from URL
-                const { data } = await axios.get(url);
+                const pageData  = await axios.get(url);
+// TODO: fix this.. Cheerio is not working correctly!
+                console.log("pageData type: ", typeof (pageData.data));
+                //console.log("pageData:  ", pageData.data);
+
                 // Load html markup
-                const $ = await cheerio.load(data);
-                var reactState = await $("#react-state").html();
+                const $1 = cheerio.load(pageData);
+                const $2 = cheerio.load('<h1>Some <em>Text</em> String</h1>');
+                test = $1('.head').html();
+
+                // var reactState = $1('#react-state').html();
+
+                console.log('cheerio $1: ', test);
+                console.log('cheerio $2: ', $2.html());
+
+
                 // cut off the first and last bits of the string, leaving only JSON
                 var PREFIX = "window._REACT_STATE_ = ";
                 var SUFFIX = ';'
-                if (length.reactState === 0) {
+                if (reactState === null) {
                     // No element with ID react-state, skip
-                    console.log('No html element found called react-state')
+                    console.log('\n No html element found called react-state \n')
                 } else {
                     if (reactState.startsWith(PREFIX)) { // Check if HTML element starts with the normal prefix, and remove if so
                         reactState = reactState.slice(PREFIX.length);
                         if (reactState.slice(-1) === ";") {  // Check if HTML element starts with the normal suffix, and remove if so
-                            reactState = reactState.slice(0, -1);
+                            reactStateHTML = reactStateHTML.slice(0, -1);
                         }
                         else {
                             // Skip this URL because it doesn't match normal format, and record the skipped URL
@@ -184,7 +197,7 @@ module.exports = {
         // RUN FUNCTIONS SECTION
         try {
             // Connect to PostgreSQL
-            const pool = new Pool({
+            const pool = await new Pool({
                 user: process.env.DB_USER,
                 host: process.env.DB_HOST,
                 database: process.env.DB_NAME,
@@ -195,7 +208,6 @@ module.exports = {
             const reactState = await scrapeHtmlData(url)
             const reactStateData = await JSON.parse(reactState)
             const episode = reactStateData.episode
-
             var getEpisodeResult = await getEpisode(url, pool)
 
             if (getEpisodeResult.rows.length > 0) {

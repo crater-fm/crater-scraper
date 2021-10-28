@@ -1,0 +1,2466 @@
+URL scraped into db: {
+  status: 200,
+  statusText: 'OK',
+  headers: {
+    'content-type': 'text/html; charset=utf-8',
+    'content-length': '58440',
+    connection: 'close',
+    'access-control-allow-origin': '*, *',
+    'cache-control': 'public, max-age=21600',
+    'content-security-policy': "default-src 'self' *.nts.live *.ntslive.co.uk; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://*.soundcloud.com *.mixcloud.com https://www.google-analytics.com https://ssl.google-analytics.com https://www.googletagmanager.com https://optimize.google.com certify-js.alexametrics.com https://www.youtube.com *.ytimg.com *.list-manage.com https://unpkg.com *.gstatic.com apis.google.com https://js.stripe.com https://www.paypal.com; connect-src *; img-src 'self' data: https:; media-src 'self' https://*.ntslive.net http://*.ntslive.net https://*.ntslive.co.uk https://*.sndcdn.com; style-src 'unsafe-inline' 'self' hello.myfonts.net https://optimize.google.com https://fonts.googleapis.com; worker-src 'self'; child-src 'self' *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com; font-src 'self' data: fonts.gstatic.com; frame-src *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com https://optimize.google.com *.firebaseapp.com https://js.stripe.com *.paypal.com;",
+    date: 'Wed,
+    27 Oct 2021 10: 41: 59 GMT',
+    etag: 'W/"e448-ll9LZe8cgQzdLBkRSKEhIbE7PW4"',
+    expires: 'Wed,
+    27 Oct 2021 16: 41: 59 GMT',
+    server: 'nginx/1.17.10',
+    'strict-transport-security': 'max-age=15552000; includeSubDomains',
+    'x-content-type-options': 'nosniff',
+    'x-dns-prefetch-control': 'off',
+    'x-download-options': 'noopen',
+    'x-frame-options': 'SAMEORIGIN',
+    'x-xss-protection': '1; mode=block',
+    vary: 'Accept-Encoding,Accept',
+    'x-cache': 'Hit from cloudfront',
+    via: '1.1 ab1d15e056bdcedbea349504173a4ecb.cloudfront.net (CloudFront)',
+    'x-amz-cf-pop': 'AMS50-C1',
+    'x-amz-cf-id': 'OIqIvx0EgxGphkqVM1yMCoZ9huv_6GiL7gEClzzgBQpdpP1sf9rTBA==',
+    age: '3379'
+  },
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter
+    ],
+    transformRequest: [
+      [Function: transformRequest
+      ]
+    ],
+    transformResponse: [
+      [Function: transformResponse
+      ]
+    ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus
+    ],
+    headers: {
+      Accept: 'application/json, text/plain, ',
+      'User-Agent': 'axios/0.23.0'
+    },
+    method: 'get',
+    url: 'https://www.nts.live/shows/mafalda/episodes/mafalda-14th-march-2021',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'www.nts.live',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'www.nts.live',
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular *1],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: 46,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object],
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: 'GET /shows/mafalda/episodes/mafalda-14th-march-2021 HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'User-Agent: axios/0.23.0\r\n' +
+      'Host: www.nts.live\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop
+      ],
+    agent: Agent {
+      _events: [Object: null prototype
+        ],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype
+        ],
+      requests: [Object: null prototype
+        ] {},
+      sockets: [Object: null prototype
+        ],
+      freeSockets: [Object: null prototype
+        ] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 67,
+      maxCachedSessions: 100,
+      _sessionCache: [Object
+        ],
+        [Symbol(kCapture)
+        ]: false
+      },
+    socketPath: undefined,
+    method: 'GET',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    path: '/shows/mafalda/episodes/mafalda-14th-march-2021',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState
+        ],
+      _events: [Object: null prototype
+        ],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      socket: [TLSSocket
+        ],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array
+        ],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 200,
+      statusMessage: 'OK',
+      client: [TLSSocket
+        ],
+      _consuming: true,
+      _dumped: false,
+      req: [Circular *1
+        ],
+      responseUrl: 'https: //www.nts.live/shows/mafalda/episodes/mafalda-14th-march-2021',
+      redirects: [],
+        [Symbol(kCapture)
+        ]: false,
+        [Symbol(kHeaders)
+        ]: [Object
+        ],
+        [Symbol(kHeadersCount)
+        ]: 46,
+        [Symbol(kTrailers)
+        ]: null,
+        [Symbol(kTrailersCount)
+        ]: 0,
+        [Symbol(RequestTimeout)
+        ]: undefined
+      },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'www.nts.live',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState
+        ],
+      _events: [Object: null prototype
+        ],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _options: [Object
+        ],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)
+        ],
+      _currentRequest: [Circular *1
+        ],
+      _currentUrl: 'https: //www.nts.live/shows/mafalda/episodes/mafalda-14th-march-2021',
+        [Symbol(kCapture)
+        ]: false
+      },
+      [Symbol(kCapture)
+      ]: false,
+      [Symbol(kNeedDrain)
+      ]: false,
+      [Symbol(corked)
+      ]: 0,
+      [Symbol(kOutHeaders)
+      ]: [Object: null prototype
+      ] {
+      accept: [Array
+        ],
+      'user-agent': [Array
+        ],
+      host: [Array
+        ]
+      }
+    },
+  data: '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="NTS Radio"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-site-verification" content="KRa2WWcmg0gMxT-xzixUWXIhxQoAIXVVL1Jdni6M6os"><link rel="preload" href="/css/fonts/Univers-Condensed/UniversCom-57Condensed.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="/css/fonts/UniversLTPro-BoldCond.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preconnect" crossorigin href="https://firebaseinstallations.googleapis.com"><link rel="preconnect" crossorigin href="https://www.google-analytics.com"><link rel="stylesheet" href="/css/style.min.762656f3ae46911d.css"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=47rE43RRzB"><link rel="icon" type="image/png" href="/favicon-32x32.png?v=47rE43RRzB" sizes="32x32"><link rel="icon" type="image/png" href="/favicon-16x16.png?v=47rE43RRzB" sizes="16x16"><link rel="manifest" href="/manifest.json?v=47rE43RRzB"><link rel="mask-icon" href="/safari-pinned-tab.svg?v=47rE43RRzB" color="#000000"><link rel="shortcut icon" href="/favicon.ico?v=47rE43RRzB"><meta name="theme-color" content="#000000"><script type="text/javascript">window.nts_env = {
+      "GA_PROPERTY_ID": "UA-6061419-3",
+      "GA_MEASUREMENT_ID": "G-WZ3JMJQ60H",
+      "GA_MEASUREMENT_ID_MOBILE": "G-NHTR5X7F3C",
+      "IOS_APP_ID": "1204567739",
+      "OPTIMIZE_ID": "GTM-ND8PTFZ",
+      "STRIPE_PUBLISHABLE_KEY": "pk_live_gjV0iVK3tVFDcVv5vhP38ltu00zh0PcuAm"
+    };</script>  <title>Tropic of Love w/ Mafalda  14th March 2021 | Listen on NTS</title><meta name="description" content="Playing Latin Jazz, Soul, Contemporary Jazz. Vibrant eclecticism from Portuguese selector Mafalda, for two hours every month. "><meta name="twitter:card" content="summary_large_image" ><meta name="twitter:site" content="@NTSlive" ><meta name="twitter:image" content="https://media2.ntslive.co.uk/resize/1600x1600/3f6c8b83-412e-493a-b3f4-c94894a343d7_1610928000.jpeg" ><meta property="og:description" content="Playing Latin Jazz, Soul, Contemporary Jazz. Vibrant eclecticism from Portuguese selector Mafalda, for two hours every month. "><meta property="og:site_name" content="NTS Radio" ><meta property="og:title" content="Tropic of Love w/ Mafalda   14th March 2021"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nts.live/shows/mafalda/episodes/mafalda-14th-march-2021"><meta property="og:image" content="https://media2.ntslive.co.uk/resize/1600x1600/3f6c8b83-412e-493a-b3f4-c94894a343d7_1610928000.jpeg"><meta name="apple-itunes-app" content="app-id=1204567739, app-argument=https://www.nts.live/shows/mafalda/episodes/mafalda-14th-march-2021"><link rel="canonical" href="https://www.nts.live/shows/mafalda/episodes/mafalda-14th-march-2021"> </head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-6061419-3"></script><script>window.dataLayer = window.dataLayer || [];\n' +
+    '    function gtag(){dataLayer.push(arguments);
+    }\n' +
+    "    gtag('js', new Date());\n" +
+    '\n' +
+    "    gtag('config', window.nts_env.GA_PROPERTY_ID, {\n" +
+    "        'optimize_id': window.nts_env.OPTIMIZE_ID,\n" +
+    "        'anonymize_ip': true,\n" +
+    "        'custom_map': {\n" +
+    "            'dimension1': 'is_authenticated',\n" +
+    "            'dimension2': 'has_subscription',\n" +
+    '
+  },\n' +
+    '
+});\n' +
+    "    gtag('config', window.nts_env.GA_MEASUREMENT_ID, {\n" +
+    "      'anonymize_ip': true,\n" +
+    '
+});</script><body><div id="ajax-container">    </div><div id="react-root"><div id="react-content" class=""><div class="snackbar snackbar--fade "></div><span class="hidden"><audio id="nts-player-audio" controls="" preload="none"><source type="audio/mpeg"/></audio></span><div id="mixcloud-player" class="  "><div class="mixcloud-player__container"><div class="mixcloud-player__button-group"><div class="mixcloud-player__button-group-container"><a class="mixcloud-player__text-link mixcloud-player__text-link--tracklist nts-button nts-app" data-track="event" data-category="Navigation" data-target="GoTo-Episode" data-origin="from-mixcloudPlayerLink"><span>TRACKLIST</span></a><button id="mixcloud-player-close" class="mixcloud-player__close nts-button" name="mixcloud-player-close"><span class="icon icon-close-cross"></span></button></div></div><div style="min-width:0;position:relative;width:100%"><div class="iframe-container visuallyhidden"></div><div class="visuallyhidden"></div></div></div></div><div class="footer-player mixtape-player "><div class="footer-player__img-container"></div><div class="footer-player__control-btn"><button class="footer-player__control-btn__icon-container nts-link"><svg class="nts-icon nts-icon--inverted" style="width:30px;height:30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><title>Play</title><g id="_x33_--Hidden-_x28_closing-up_x29_-" transform="translate(-772 -385)"><g id="Drawer" transform="translate(0 43)"><g id="_x32_" transform="translate(18)"><path id="play" d="M1260.4 651.3L882.8 861.2c-4.4 2.4-8.2 2.7-11.2 1-3.1-1.7-4.6-5.1-4.6-10.2V433.2c0-4.8 1.5-8.2 4.6-10.2 3.1-2 6.8-1.7 11.2 1l377.6 210c4.4 2.4 6.6 5.3 6.6 8.7 0 3.3-2.2 6.2-6.6 8.6z"></path></g></g></g></svg></button></div><div class="footer-player__info"></div><button class="footer-player__live-tracks-trigger nts-link no-padding"><svg class="nts-icon nts-icon--inline-alt" style="width:24px;height:24px;fill:white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.87 14.49h8V13h-8zm12-5h-12V11h12zm0-3.5h-12v1.5h12zm6.26 3.34l-2.88-1v7a2.67 2.67 0 01-2 2.61 2.53 2.53 0 01-2.88-1.44 2.73 2.73 0 01.71-3.24 2.49 2.49 0 013.2 0V6l3.84 1.33z"></path></svg></button><div class="footer-player__right-btn-container"><button class="footer-player__right-btn nts-link no-padding"><svg class="nts-icon nts-icon--s nts-icon--inverted" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg></button></div></div><div><div class="navigation-page-overlay "></div><header class="header"><a class="header__home nts-app nts-link" href="/" data-track="event" data-category="Navigation" data-target="GoTo-Home" data-origin="from: header" aria-label="Home"><svg style="fill:#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.7 6.9L22.3 9h-1.5l.5-2c.1-.6.1-1.1-.6-1.1s-1 .5-1.1 1.1l-.4 1.7c-.1.5-.1 1 0 1.5l1.4 4.1c.2.6.3 1.3.1 2l-.6 2.6c-.4 1.5-1.5 2.4-2.9 2.4-1.6 0-2.3-.7-1.9-2.4l.5-2.2h1.5l-.5 2.1c-.2.8 0 1.2.7 1.2.6 0 1-.5 1.2-1.2l.5-2.3c.1-.5.1-1.1-.1-1.6l-1.3-3.8c-.2-.7-.3-1.2-.2-2.1l.4-2c.4-1.6 1.4-2.4 2.9-2.4 1.7 0 2.2.8 1.8 2.3zM11.2 21.1L14.6 6H13l.3-1.3h4.8L17.8 6h-1.7l-3.4 15.1h-1.5zm-4.5 0L8.1 6.6 4.8 21.1H3.5L7.2 4.8h2.2L8 18.7l3.2-14h1.3L8.8 21.1H6.7zM0 26h26V0H0v26z"></path></svg></a><nav class="header__nav text-uppercase hidden-phone"><a class="header-nav-item nts-app nts-link " href="/radio">Radio</a><a class="header-nav-item nts-app nts-link " href="/latest">Latest</a><a class="header-nav-item nts-app nts-link " href="/explore">Explore</a><a class="header-nav-item nts-app nts-link " href="/infinite-mixtapes">Infinite Mixtapes</a><a class="header-nav-cta nts-app nts-button nts-link hidden" href="/supporters">NTS Supporters</a></nav><div class="header__search-form"><form class="search-form" method="get"><button class="search-form__button" aria-label="Search" type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M413.38 392.4a169.89 169.89 0 0 0 18.19-27.4c43-83 10.73-185.28-72.09-228.39a168.63 168.63 0 0 0-227.82 72.27c-43 83-10.74 185.28 72.09 228.39a168.49 168.49 0 0 0 183.35-18L461.62 494l26.56-26.62zm-194.25 15.16C152.67 373 126.77 290.9 161.28 224.28a135.43 135.43 0 0 1 182.82-58c66.46 34.6 92.36 116.66 57.85 183.28a135.43 135.43 0 0 1-182.82 58z"></path></svg></button><input type="text" class="search-form__input nts-input search-btn" name="q" autoComplete="off" value="" aria-label="Search"/></form></div><a class="header-nav-item header-nav-item--alt nts-link text-uppercase hidden-phone" href="https://shop.nts.live/" target="_blank" rel="noopener noreferrer">Shop</a><button class="header-nav-item nts-link hidden-phone" data-track="event" data-category="Navigation" data-target="Open-Chat" data-origin="from: header" aria-label="Open chat"><svg style="height:20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M493 391.73h-45.9v99.35l-128.18-99.35H118V144.92h375z"></path></svg></button><a class="header-nav-item header-nav-item--alt nts-app nts-link hidden-phone " href="/my-nts/favourites/shows" aria-label="My NTS"><svg class="nts-icon--inline nts-icon--inline--xxl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.41a2.92 2.92 0 11-2.95 2.92A2.91 2.91 0 0112 4.41m0-1.58a4.5 4.5 0 104.5 4.5 4.5 4.5 0 00-4.5-4.5zm0 11.71c3.26 0 7.41 1.63 7.41 2.91v1.79H4.55v-1.79c0-1.28 4.16-2.91 7.41-2.91M12 13c-3 0-9 1.51-9 4.5v3.38h18v-3.43c0-3-6-4.5-9-4.5z" data-name="Layer 5"></path></svg><span class="text-uppercase visible-desktop">My NTS</span></a><button class="header__menu-toggle  nts-link" aria-label="Toggle navigation menu"><svg class="header__menu-toggle__icon header__menu-toggle__icon--cross" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg><svg class="header__menu-toggle__icon header__menu-toggle__icon--ellipsis" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M150.39 340a37.5 37.5 0 1 1 37.5-37.5 37.5 37.5 0 0 1-37.5 37.5zm150 0a37.5 37.5 0 1 1 37.5-37.5 37.5 37.5 0 0 1-37.5 37.5zm150 0a37.5 37.5 0 1 1 37.5-37.5 37.5 37.5 0 0 1-37.5 37.5z"></path><path fill="none" d="M0 2h600v600H0z"></path></svg><svg class="header__menu-toggle__icon header__menu-toggle__icon--hamburg'... 48410 more characters
+}
+
+ No html element found called react-state 
+
+URL scraped into db: https: //www.nts.live/shows/mafalda/episodes/mafalda-14th-march-2021
+{
+  status: 200,
+  statusText: 'OK',
+  headers: {
+    'content-type': 'text/html; charset=utf-8',
+    'content-length': '52293',
+    connection: 'close',
+    'access-control-allow-origin': '*, *',
+    'cache-control': 'public, max-age=21600',
+    'content-security-policy': "default-src 'self' *.nts.live *.ntslive.co.uk; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://*.soundcloud.com *.mixcloud.com https://www.google-analytics.com https://ssl.google-analytics.com https://www.googletagmanager.com https://optimize.google.com certify-js.alexametrics.com https://www.youtube.com *.ytimg.com *.list-manage.com https://unpkg.com *.gstatic.com apis.google.com https://js.stripe.com https://www.paypal.com; connect-src *; img-src 'self' data: https:; media-src 'self' https://*.ntslive.net http://*.ntslive.net https://*.ntslive.co.uk https://*.sndcdn.com; style-src 'unsafe-inline' 'self' hello.myfonts.net https://optimize.google.com https://fonts.googleapis.com; worker-src 'self'; child-src 'self' *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com; font-src 'self' data: fonts.gstatic.com; frame-src *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com https://optimize.google.com *.firebaseapp.com https://js.stripe.com *.paypal.com;",
+    date: 'Wed,
+27 Oct 2021 10: 42: 00 GMT',
+    etag: 'W/"cc45-n6gdV3kPekc8YTBi0cc9Pr4eMtk"',
+    expires: 'Wed,
+27 Oct 2021 16: 42: 00 GMT',
+    server: 'nginx/1.17.10',
+    'strict-transport-security': 'max-age=15552000; includeSubDomains',
+    'x-content-type-options': 'nosniff',
+    'x-dns-prefetch-control': 'off',
+    'x-download-options': 'noopen',
+    'x-frame-options': 'SAMEORIGIN',
+    'x-xss-protection': '1; mode=block',
+    vary: 'Accept-Encoding,Accept',
+    'x-cache': 'Hit from cloudfront',
+    via: '1.1 24562ce7bb1d06e6505e84aac2d66ac7.cloudfront.net (CloudFront)',
+    'x-amz-cf-pop': 'AMS50-C1',
+    'x-amz-cf-id': 't9x5ZLgQxeRLSaACW-zsZVCLHnyIQ-rkVZheT4J8EgJAY52rhvQtvw==',
+    age: '3379'
+},
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+},
+    adapter: [Function: httpAdapter
+],
+    transformRequest: [
+  [Function: transformRequest
+  ]
+],
+    transformResponse: [
+  [Function: transformResponse
+  ]
+],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus
+],
+    headers: {
+      Accept: 'application/json, text/plain, * /*',
+      'User-Agent': 'axios/0.23.0'
+    },
+    method: 'get',
+    url: 'https://www.nts.live/shows/underground-music-academy/episodes/floorplan-19th-june-2021',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'www.nts.live',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'www.nts.live',
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular *1],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: 151,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object],
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: 'GET /shows/underground-music-academy/episodes/floorplan-19th-june-2021 HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'User-Agent: axios/0.23.0\r\n' +
+      'Host: www.nts.live\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop
+  ],
+    agent: Agent {
+      _events: [Object: null prototype
+    ],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype
+    ],
+      requests: [Object: null prototype
+    ] {},
+      sockets: [Object: null prototype
+    ],
+      freeSockets: [Object: null prototype
+    ] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 67,
+      maxCachedSessions: 100,
+      _sessionCache: [Object
+    ],
+    [Symbol(kCapture)
+    ]: false
+  },
+    socketPath: undefined,
+    method: 'GET',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    path: '/shows/underground-music-academy/episodes/floorplan-19th-june-2021',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState
+    ],
+      _events: [Object: null prototype
+    ],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      socket: [TLSSocket
+    ],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array
+    ],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 200,
+      statusMessage: 'OK',
+      client: [TLSSocket
+    ],
+      _consuming: true,
+      _dumped: false,
+      req: [Circular *1
+    ],
+      responseUrl: 'https: //www.nts.live/shows/underground-music-academy/episodes/floorplan-19th-june-2021',
+      redirects: [],
+    [Symbol(kCapture)
+    ]: false,
+    [Symbol(kHeaders)
+    ]: [Object
+    ],
+    [Symbol(kHeadersCount)
+    ]: 46,
+    [Symbol(kTrailers)
+    ]: null,
+    [Symbol(kTrailersCount)
+    ]: 0,
+    [Symbol(RequestTimeout)
+    ]: undefined
+  },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'www.nts.live',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState
+    ],
+      _events: [Object: null prototype
+    ],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _options: [Object
+    ],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)
+    ],
+      _currentRequest: [Circular *1
+    ],
+      _currentUrl: 'https: //www.nts.live/shows/underground-music-academy/episodes/floorplan-19th-june-2021',
+    [Symbol(kCapture)
+    ]: false
+  },
+  [Symbol(kCapture)
+  ]: false,
+  [Symbol(kNeedDrain)
+  ]: false,
+  [Symbol(corked)
+  ]: 0,
+  [Symbol(kOutHeaders)
+  ]: [Object: null prototype
+  ] {
+      accept: [Array
+    ],
+      'user-agent': [Array
+    ],
+      host: [Array
+    ]
+  }
+},
+  data: `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="NTS Radio"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-site-verification" content="KRa2WWcmg0gMxT-xzixUWXIhxQoAIXVVL1Jdni6M6os"><link rel="preload" href="/css/fonts/Univers-Condensed/UniversCom-57Condensed.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="/css/fonts/UniversLTPro-BoldCond.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preconnect" crossorigin href="https://firebaseinstallations.googleapis.com"><link rel="preconnect" crossorigin href="https://www.google-analytics.com"><link rel="stylesheet" href="/css/style.min.762656f3ae46911d.css"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=47rE43RRzB"><link rel="icon" type="image/png" href="/favicon-32x32.png?v=47rE43RRzB" sizes="32x32"><link rel="icon" type="image/png" href="/favicon-16x16.png?v=47rE43RRzB" sizes="16x16"><link rel="manifest" href="/manifest.json?v=47rE43RRzB"><link rel="mask-icon" href="/safari-pinned-tab.svg?v=47rE43RRzB" color="#000000"><link rel="shortcut icon" href="/favicon.ico?v=47rE43RRzB"><meta name="theme-color" content="#000000"><script type="text/javascript">window.nts_env = {
+  "GA_PROPERTY_ID": "UA-6061419-3",
+  "GA_MEASUREMENT_ID": "G-WZ3JMJQ60H",
+  "GA_MEASUREMENT_ID_MOBILE": "G-NHTR5X7F3C",
+  "IOS_APP_ID": "1204567739",
+  "OPTIMIZE_ID": "GTM-ND8PTFZ",
+  "STRIPE_PUBLISHABLE_KEY": "pk_live_gjV0iVK3tVFDcVv5vhP38ltu00zh0PcuAm"
+};</script>  <title>Floorplan 19th June 2021 | Listen on NTS</title><meta name="description" content="Playing Detroit House, Detroit Techno. An all day takeover raising funds for Underground Music Academy, educating Detroit's next musical generation. Hosted by Waajeed. \n` +
+    `DONATE NOW: ioby.org/UMA"><meta name="twitter:card" content="summary_large_image" ><meta name="twitter:site" content="@NTSlive" ><meta name="twitter:image" content="https: //media2.ntslive.co.uk/resize/1600x1600/48f7f328-ccfd-43b7-aa69-d1de14e9b7a8_1623974400.jpeg" ><meta property="og:description" content="Playing Detroit House, Detroit Techno. An all day takeover raising funds for Underground Music Academy, educating Detroit's next musical generation. Hosted by Waajeed. \n` +
+    'DONATE NOW: ioby.org/UMA"><meta property="og:site_name" content="NTS Radio" ><meta property="og:title" content="Floorplan  19th June 2021"><meta property="og:type" content="article"><meta property="og:url" content="https: //www.nts.live/shows/underground-music-academy/episodes/floorplan-19th-june-2021"><meta property="og:image" content="https://media2.ntslive.co.uk/resize/1600x1600/48f7f328-ccfd-43b7-aa69-d1de14e9b7a8_1623974400.jpeg"><meta name="apple-itunes-app" content="app-id=1204567739, app-argument=https://www.nts.live/shows/underground-music-academy/episodes/floorplan-19th-june-2021"><link rel="canonical" href="https://www.nts.live/shows/underground-music-academy/episodes/floorplan-19th-june-2021"> </head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-6061419-3"></script><script>window.dataLayer = window.dataLayer || [];\n' +
+    '    function gtag(){dataLayer.push(arguments);
+}\n' +
+    "    gtag('js', new Date());\n" +
+    '\n' +
+    "    gtag('config', window.nts_env.GA_PROPERTY_ID, {\n" +
+    "        'optimize_id': window.nts_env.OPTIMIZE_ID,\n" +
+    "        'anonymize_ip': true,\n" +
+    "        'custom_map': {\n" +
+    "            'dimension1': 'is_authenticated',\n" +
+    "            'dimension2': 'has_subscription',\n" +
+    '
+},\n' +
+    '
+});\n' +
+    "    gtag('config', window.nts_env.GA_MEASUREMENT_ID, {\n" +
+    "      'anonymize_ip': true,\n" +
+    '
+});</script><body><div id="ajax-container">    </div><div id="react-root"><div id="react-content" class=""><div class="snackbar snackbar--fade "></div><span class="hidden"><audio id="nts-player-audio" controls="" preload="none"><source type="audio/mpeg"/></audio></span><div id="mixcloud-player" class="  "><div class="mixcloud-player__container"><div class="mixcloud-player__button-group"><div class="mixcloud-player__button-group-container"><a class="mixcloud-player__text-link mixcloud-player__text-link--tracklist nts-button nts-app" data-track="event" data-category="Navigation" data-target="GoTo-Episode" data-origin="from-mixcloudPlayerLink"><span>TRACKLIST</span></a><button id="mixcloud-player-close" class="mixcloud-player__close nts-button" name="mixcloud-player-close"><span class="icon icon-close-cross"></span></button></div></div><div style="min-width:0;position:relative;width:100%"><div class="iframe-container visuallyhidden"></div><div class="visuallyhidden"></div></div></div></div><div class="footer-player mixtape-player "><div class="footer-player__img-container"></div><div class="footer-player__control-btn"><button class="footer-player__control-btn__icon-container nts-link"><svg class="nts-icon nts-icon--inverted" style="width:30px;height:30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><title>Play</title><g id="_x33_--Hidden-_x28_closing-up_x29_-" transform="translate(-772 -385)"><g id="Drawer" transform="translate(0 43)"><g id="_x32_" transform="translate(18)"><path id="play" d="M1260.4 651.3L882.8 861.2c-4.4 2.4-8.2 2.7-11.2 1-3.1-1.7-4.6-5.1-4.6-10.2V433.2c0-4.8 1.5-8.2 4.6-10.2 3.1-2 6.8-1.7 11.2 1l377.6 210c4.4 2.4 6.6 5.3 6.6 8.7 0 3.3-2.2 6.2-6.6 8.6z"></path></g></g></g></svg></button></div><div class="footer-player__info"></div><button class="footer-player__live-tracks-trigger nts-link no-padding"><svg class="nts-icon nts-icon--inline-alt" style="width:24px;height:24px;fill:white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.87 14.49h8V13h-8zm12-5h-12V11h12zm0-3.5h-12v1.5h12zm6.26 3.34l-2.88-1v7a2.67 2.67 0 01-2 2.61 2.53 2.53 0 01-2.88-1.44 2.73 2.73 0 01.71-3.24 2.49 2.49 0 013.2 0V6l3.84 1.33z"></path></svg></button><div class="footer-player__right-btn-container"><button class="footer-player__right-btn nts-link no-padding"><svg class="nts-icon nts-icon--s nts-icon--inverted" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg></button></div></div><div><div class="navigation-page-overlay "></div><header class="header"><a class="header__home nts-app nts-link" href="/" data-track="event" data-category="Navigation" data-target="GoTo-Home" data-origin="from: header" aria-label="Home"><svg style="fill:#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.7 6.9L22.3 9h-1.5l.5-2c.1-.6.1-1.1-.6-1.1s-1 .5-1.1 1.1l-.4 1.7c-.1.5-.1 1 0 1.5l1.4 4.1c.2.6.3 1.3.1 2l-.6 2.6c-.4 1.5-1.5 2.4-2.9 2.4-1.6 0-2.3-.7-1.9-2.4l.5-2.2h1.5l-.5 2.1c-.2.8 0 1.2.7 1.2.6 0 1-.5 1.2-1.2l.5-2.3c.1-.5.1-1.1-.1-1.6l-1.3-3.8c-.2-.7-.3-1.2-.2-2.1l.4-2c.4-1.6 1.4-2.4 2.9-2.4 1.7 0 2.2.8 1.8 2.3zM11.2 21.1L14.6 6H13l.3-1.3h4.8L17.8 6h-1.7l-3.4 15.1h-1.5zm-4.5 0L8.1 6.6 4.8 21.1H3.5L7.2 4.8h2.2L8 18.7l3.2-14h1.3L8.8 21.1H6.7zM0 26h26V0H0v26z"></path></svg></a><nav class="header__nav text-uppercase hidden-phone"><a class="header-nav-item nts-app nts-link " href="/radio">Radio</a><a class="header-nav-item nts-app nts-link " href="/latest">Latest</a><a class="header-nav-item nts-app nts-link " href="/explore">Explore</a><a class="header-nav-item nts-app nts-link " href="/infinite-mixtapes">Infinite Mixtapes</a><a class="header-nav-cta nts-app nts-button nts-link hidden" href="/supporters">NTS Supporters</a></nav><div class="header__search-form"><form class="search-form" method="get"><button class="search-form__button" aria-label="Search" type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M413.38 392.4a169.89 169.89 0 0 0 18.19-27.4c43-83 10.73-185.28-72.09-228.39a168.63 168.63 0 0 0-227.82 72.27c-43 83-10.74 185.28 72.09 228.39a168.49 168.49 0 0 0 183.35-18L461.62 494l26.56-26.62zm-194.25 15.16C152.67 373 126.77 290.9 161.28 224.28a135.43 135.43 0 0 1 182.82-58c66.46 34.6 92.36 116.66 57.85 183.28a135.43 135.43 0 0 1-182.82 58z"></path></svg></button><input type="text" class="search-form__input nts-input search-btn" name="q" autoComplete="off" value="" aria-label="Search"/></form></div><a class="header-nav-item header-nav-item--alt nts-link text-uppercase hidden-phone" href="https://shop.nts.live/" target="_blank" rel="noopener noreferrer">Shop</a><button class="header-nav-item nts-link hidden-phone" data-track="event" data-category="Navigation" data-target="Open-Chat" data-origin="from: header" aria-label="Open chat"><svg style="height:20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M493 391.73h-45.9v99.35l-128.18-99.35H118V144.92h375z"></path></svg></button><a class="header-nav-item header-nav-item--alt nts-app nts-link hidden-phone " href="/my-nts/favourites/shows" aria-label="My NTS"><svg class="nts-icon--inline nts-icon--inline--xxl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.41a2.92 2.92 0 11-2.95 2.92A2.91 2.91 0 0112 4.41m0-1.58a4.5 4.5 0 104.5 4.5 4.5 4.5 0 00-4.5-4.5zm0 11.71c3.26 0 7.41 1.63 7.41 2.91v1.79H4.55v-1.79c0-1.28 4.16-2.91 7.41-2.91M12 13c-3 0-9 1.51-9 4.5v3.38h18v-3.43c0-3-6-4.5-9-4.5z" data-name="Layer 5"></path></svg><span class="text-uppercase visible-desktop">My NTS</span></a><button class="header__menu-toggle  nts-link" aria-label="Toggle navigation menu"><svg class="header__menu-toggle__icon header__menu-toggle__icon--cross" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg><svg class="header__menu-toggle__icon header__menu-toggle__icon--ellipsis" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M150.39 340a37.5 37.5 0 1 1 37.5-37.5 37.5 37.5 0 0 1-37.5 37.5zm150 0a37.5 37.5 0 1 1 37.5-37.5 37.5 37.5 0 0 1-37.5 37.5zm150 0a37.5 37.5 0 1 1 37.5-37.5 37.'... 42275 more characters
+}
+
+ No html element found called react-state 
+
+URL scraped into db: https: //www.nts.live/shows/underground-music-academy/episodes/floorplan-19th-june-2021
+{
+  status: 200,
+  statusText: 'OK',
+  headers: {
+    'content-type': 'text/html; charset=utf-8',
+    'content-length': '42535',
+    connection: 'close',
+    'access-control-allow-origin': '*, *',
+    'cache-control': 'public, max-age=21600',
+    'content-security-policy': "default-src 'self' *.nts.live *.ntslive.co.uk; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://*.soundcloud.com *.mixcloud.com https://www.google-analytics.com https://ssl.google-analytics.com https://www.googletagmanager.com https://optimize.google.com certify-js.alexametrics.com https://www.youtube.com *.ytimg.com *.list-manage.com https://unpkg.com *.gstatic.com apis.google.com https://js.stripe.com https://www.paypal.com; connect-src *; img-src 'self' data: https:; media-src 'self' https://*.ntslive.net http://*.ntslive.net https://*.ntslive.co.uk https://*.sndcdn.com; style-src 'unsafe-inline' 'self' hello.myfonts.net https://optimize.google.com https://fonts.googleapis.com; worker-src 'self'; child-src 'self' *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com; font-src 'self' data: fonts.gstatic.com; frame-src *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com https://optimize.google.com *.firebaseapp.com https://js.stripe.com *.paypal.com;",
+    date: 'Wed,
+27 Oct 2021 10: 41: 59 GMT',
+    etag: 'W/"a627-VyqRGs33BA2EEr4giXuM/MnG20o"',
+    expires: 'Wed,
+27 Oct 2021 16: 41: 59 GMT',
+    server: 'nginx/1.17.10',
+    'strict-transport-security': 'max-age=15552000; includeSubDomains',
+    'x-content-type-options': 'nosniff',
+    'x-dns-prefetch-control': 'off',
+    'x-download-options': 'noopen',
+    'x-frame-options': 'SAMEORIGIN',
+    'x-xss-protection': '1; mode=block',
+    vary: 'Accept-Encoding,Accept',
+    'x-cache': 'Hit from cloudfront',
+    via: '1.1 552d1a24616d6b8d6e3fbbdf18a54b6a.cloudfront.net (CloudFront)',
+    'x-amz-cf-pop': 'AMS50-C1',
+    'x-amz-cf-id': 'OnZa-Ne__ZwYljaDmEi_66owVejEHFHiyc6-0iXY-d6W-4anhvD24Q==',
+    age: '3380'
+},
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+},
+    adapter: [Function: httpAdapter
+],
+    transformRequest: [
+[Function: transformRequest
+]
+],
+    transformResponse: [
+[Function: transformResponse
+]
+],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus
+],
+    headers: {
+      Accept: 'application/json, text/plain, * /*',
+      'User-Agent': 'axios/0.23.0'
+    },
+    method: 'get',
+    url: 'https://www.nts.live/shows/secret-sundaze/episodes/secretsundaze-8th-july-2021',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'www.nts.live',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'www.nts.live',
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular *1],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: 146,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object],
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: 'GET /shows/secret-sundaze/episodes/secretsundaze-8th-july-2021 HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'User-Agent: axios/0.23.0\r\n' +
+      'Host: www.nts.live\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop
+],
+    agent: Agent {
+      _events: [Object: null prototype
+],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype
+],
+      requests: [Object: null prototype
+] {},
+      sockets: [Object: null prototype
+],
+      freeSockets: [Object: null prototype
+] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 67,
+      maxCachedSessions: 100,
+      _sessionCache: [Object
+],
+[Symbol(kCapture)
+]: false
+},
+    socketPath: undefined,
+    method: 'GET',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    path: '/shows/secret-sundaze/episodes/secretsundaze-8th-july-2021',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState
+],
+      _events: [Object: null prototype
+],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      socket: [TLSSocket
+],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array
+],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 200,
+      statusMessage: 'OK',
+      client: [TLSSocket
+],
+      _consuming: true,
+      _dumped: false,
+      req: [Circular *1
+],
+      responseUrl: 'https: //www.nts.live/shows/secret-sundaze/episodes/secretsundaze-8th-july-2021',
+      redirects: [],
+[Symbol(kCapture)
+]: false,
+[Symbol(kHeaders)
+]: [Object
+],
+[Symbol(kHeadersCount)
+]: 46,
+[Symbol(kTrailers)
+]: null,
+[Symbol(kTrailersCount)
+]: 0,
+[Symbol(RequestTimeout)
+]: undefined
+},
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'www.nts.live',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState
+],
+      _events: [Object: null prototype
+],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _options: [Object
+],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)
+],
+      _currentRequest: [Circular *1
+],
+      _currentUrl: 'https: //www.nts.live/shows/secret-sundaze/episodes/secretsundaze-8th-july-2021',
+[Symbol(kCapture)
+]: false
+},
+[Symbol(kCapture)
+]: false,
+[Symbol(kNeedDrain)
+]: false,
+[Symbol(corked)
+]: 0,
+[Symbol(kOutHeaders)
+]: [Object: null prototype
+] {
+      accept: [Array
+],
+      'user-agent': [Array
+],
+      host: [Array
+]
+}
+},
+  data: '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="NTS Radio"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-site-verification" content="KRa2WWcmg0gMxT-xzixUWXIhxQoAIXVVL1Jdni6M6os"><link rel="preload" href="/css/fonts/Univers-Condensed/UniversCom-57Condensed.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="/css/fonts/UniversLTPro-BoldCond.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preconnect" crossorigin href="https://firebaseinstallations.googleapis.com"><link rel="preconnect" crossorigin href="https://www.google-analytics.com"><link rel="stylesheet" href="/css/style.min.762656f3ae46911d.css"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=47rE43RRzB"><link rel="icon" type="image/png" href="/favicon-32x32.png?v=47rE43RRzB" sizes="32x32"><link rel="icon" type="image/png" href="/favicon-16x16.png?v=47rE43RRzB" sizes="16x16"><link rel="manifest" href="/manifest.json?v=47rE43RRzB"><link rel="mask-icon" href="/safari-pinned-tab.svg?v=47rE43RRzB" color="#000000"><link rel="shortcut icon" href="/favicon.ico?v=47rE43RRzB"><meta name="theme-color" content="#000000"><script type="text/javascript">window.nts_env = {
+"GA_PROPERTY_ID": "UA-6061419-3",
+"GA_MEASUREMENT_ID": "G-WZ3JMJQ60H",
+"GA_MEASUREMENT_ID_MOBILE": "G-NHTR5X7F3C",
+"IOS_APP_ID": "1204567739",
+"OPTIMIZE_ID": "GTM-ND8PTFZ",
+"STRIPE_PUBLISHABLE_KEY": "pk_live_gjV0iVK3tVFDcVv5vhP38ltu00zh0PcuAm"
+};</script>  <title>Secretsundaze w/ Damar Davis 8th July 2021 | Listen on NTS</title><meta name="description" content="Playing Detroit House, House, Classic Disco. Secretsundaze have always pushed that true dance music spirit, be it at their party, through their DJ sets, productions or with their label. Expect trademark roots-infused house, soul, jazz, boogie and more…."><meta name="twitter:card" content="summary_large_image" ><meta name="twitter:site" content="@NTSlive" ><meta name="twitter:image" content="https://media2.ntslive.co.uk/resize/1600x1600/c224f0f4-ce9e-4320-8a37-7f8547529213_1538697600.jpeg" ><meta property="og:description" content="Playing Detroit House, House, Classic Disco. Secretsundaze have always pushed that true dance music spirit, be it at their party, through their DJ sets, productions or with their label. Expect trademark roots-infused house, soul, jazz, boogie and more…."><meta property="og:site_name" content="NTS Radio" ><meta property="og:title" content="Secretsundaze w/ Damar Davis  8th July 2021"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nts.live/shows/secret-sundaze/episodes/secretsundaze-8th-july-2021"><meta property="og:image" content="https://media2.ntslive.co.uk/resize/1600x1600/c224f0f4-ce9e-4320-8a37-7f8547529213_1538697600.jpeg"><meta name="apple-itunes-app" content="app-id=1204567739, app-argument=https://www.nts.live/shows/secret-sundaze/episodes/secretsundaze-8th-july-2021"><link rel="canonical" href="https://www.nts.live/shows/secret-sundaze/episodes/secretsundaze-8th-july-2021"> </head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-6061419-3"></script><script>window.dataLayer = window.dataLayer || [];\n' +
+    '    function gtag(){dataLayer.push(arguments);
+}\n' +
+    "    gtag('js', new Date());\n" +
+    '\n' +
+    "    gtag('config', window.nts_env.GA_PROPERTY_ID, {\n" +
+    "        'optimize_id': window.nts_env.OPTIMIZE_ID,\n" +
+    "        'anonymize_ip': true,\n" +
+    "        'custom_map': {\n" +
+    "            'dimension1': 'is_authenticated',\n" +
+    "            'dimension2': 'has_subscription',\n" +
+    '
+},\n' +
+    '
+});\n' +
+    "    gtag('config', window.nts_env.GA_MEASUREMENT_ID, {\n" +
+    "      'anonymize_ip': true,\n" +
+    '
+});</script><body><div id="ajax-container">    </div><div id="react-root"><div id="react-content" class=""><div class="snackbar snackbar--fade "></div><span class="hidden"><audio id="nts-player-audio" controls="" preload="none"><source type="audio/mpeg"/></audio></span><div id="mixcloud-player" class="  "><div class="mixcloud-player__container"><div class="mixcloud-player__button-group"><div class="mixcloud-player__button-group-container"><a class="mixcloud-player__text-link mixcloud-player__text-link--tracklist nts-button nts-app" data-track="event" data-category="Navigation" data-target="GoTo-Episode" data-origin="from-mixcloudPlayerLink"><span>TRACKLIST</span></a><button id="mixcloud-player-close" class="mixcloud-player__close nts-button" name="mixcloud-player-close"><span class="icon icon-close-cross"></span></button></div></div><div style="min-width:0;position:relative;width:100%"><div class="iframe-container visuallyhidden"></div><div class="visuallyhidden"></div></div></div></div><div class="footer-player mixtape-player "><div class="footer-player__img-container"></div><div class="footer-player__control-btn"><button class="footer-player__control-btn__icon-container nts-link"><svg class="nts-icon nts-icon--inverted" style="width:30px;height:30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><title>Play</title><g id="_x33_--Hidden-_x28_closing-up_x29_-" transform="translate(-772 -385)"><g id="Drawer" transform="translate(0 43)"><g id="_x32_" transform="translate(18)"><path id="play" d="M1260.4 651.3L882.8 861.2c-4.4 2.4-8.2 2.7-11.2 1-3.1-1.7-4.6-5.1-4.6-10.2V433.2c0-4.8 1.5-8.2 4.6-10.2 3.1-2 6.8-1.7 11.2 1l377.6 210c4.4 2.4 6.6 5.3 6.6 8.7 0 3.3-2.2 6.2-6.6 8.6z"></path></g></g></g></svg></button></div><div class="footer-player__info"></div><button class="footer-player__live-tracks-trigger nts-link no-padding"><svg class="nts-icon nts-icon--inline-alt" style="width:24px;height:24px;fill:white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.87 14.49h8V13h-8zm12-5h-12V11h12zm0-3.5h-12v1.5h12zm6.26 3.34l-2.88-1v7a2.67 2.67 0 01-2 2.61 2.53 2.53 0 01-2.88-1.44 2.73 2.73 0 01.71-3.24 2.49 2.49 0 013.2 0V6l3.84 1.33z"></path></svg></button><div class="footer-player__right-btn-container"><button class="footer-player__right-btn nts-link no-padding"><svg class="nts-icon nts-icon--s nts-icon--inverted" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg></button></div></div><div><div class="navigation-page-overlay "></div><header class="header"><a class="header__home nts-app nts-link" href="/" data-track="event" data-category="Navigation" data-target="GoTo-Home" data-origin="from: header" aria-label="Home"><svg style="fill:#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.7 6.9L22.3 9h-1.5l.5-2c.1-.6.1-1.1-.6-1.1s-1 .5-1.1 1.1l-.4 1.7c-.1.5-.1 1 0 1.5l1.4 4.1c.2.6.3 1.3.1 2l-.6 2.6c-.4 1.5-1.5 2.4-2.9 2.4-1.6 0-2.3-.7-1.9-2.4l.5-2.2h1.5l-.5 2.1c-.2.8 0 1.2.7 1.2.6 0 1-.5 1.2-1.2l.5-2.3c.1-.5.1-1.1-.1-1.6l-1.3-3.8c-.2-.7-.3-1.2-.2-2.1l.4-2c.4-1.6 1.4-2.4 2.9-2.4 1.7 0 2.2.8 1.8 2.3zM11.2 21.1L14.6 6H13l.3-1.3h4.8L17.8 6h-1.7l-3.4 15.1h-1.5zm-4.5 0L8.1 6.6 4.8 21.1H3.5L7.2 4.8h2.2L8 18.7l3.2-14h1.3L8.8 21.1H6.7zM0 26h26V0H0v26z"></path></svg></a><nav class="header__nav text-uppercase hidden-phone"><a class="header-nav-item nts-app nts-link " href="/radio">Radio</a><a class="header-nav-item nts-app nts-link " href="/latest">Latest</a><a class="header-nav-item nts-app nts-link " href="/explore">Explore</a><a class="header-nav-item nts-app nts-link " href="/infinite-mixtapes">Infinite Mixtapes</a><a class="header-nav-cta nts-app nts-button nts-link hidden" href="/supporters">NTS Supporters</a></nav><div class="header__search-form"><form class="search-form" method="get"><button class="search-form__button" aria-label="Search" type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M413.38 392.4a169.89 169.89 0 0 0 18.19-27.4c43-83 10.73-185.28-72.09-228.39a168.63 168.63 0 0 0-227.82 72.27c-43 83-10.74 185.28 72.09 228.39a168.49 168.49 0 0 0 183.35-18L461.62 494l26.56-26.62zm-194.25 15.16C152.67 373 126.77 290.9 161.28 224.28a135.43 135.43 0 0 1 182.82-58c66.46 34.6 92.36 116.66 57.85 183.28a135.43 135.43 0 0 1-182.82 58z"></path></svg></button><input type="text" class="search-form__input nts-input search-btn" name="q" autoComplete="off" value="" aria-label="Search"/></form></div><a class="header-nav-item header-nav-item--alt nts-link text-uppercase hidden-phone" href="https://shop.nts.live/" target="_blank" rel="noopener noreferrer">Shop</a><button class="header-nav-item nts-link hidden-phone" data-track="event" data-category="Navigation" data-target="Open-Chat" data-origin="from: header" aria-label="Open chat"><svg style="height:20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M493 391.73h-45.9v99.35l-128.18-99.35H118V144.92h375z"></path></svg></button><a class="header-nav-item header-nav-item--alt nts-app nts-link hidden-phone " href="/my-nts/favourites/shows" aria-label="My NTS"><svg class="nts-icon--inline nts-icon--inline--xxl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.41a2.92 2.92 0 11-2.95 2.92A2.91 2.91 0 0112 4.41m0-1.58a4.5 4.5 0 104.5 4.5 4.5 4.5 0 00-4.5-4.5zm0 11.71c3.26 0 7.41 1.63 7.41 2.91v1.79H4.55v-1.79c0-1.28 4.16-2.91 7.41-2.91M12 13c-3 0-9 1.51-9 4.5v3.38h18v-3.43c0-3-6-4.5-9-4.5z" data-name="Layer 5"></path></svg><span class="text-uppercase visible-desktop">My NTS</span></a><button class="header__menu-toggle  nts-link" aria-label="Toggle navigation menu"><svg class="header__menu-toggle__icon header__menu-toggle__icon--cross" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg><svg class="header__menu-toggle__icon header__menu-toggle__icon--ellipsis" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M150.39 340a37.5 37.5 0 1 1'... 32516 more characters
+}
+
+ No html element found called react-state 
+
+URL scraped into db: https: //www.nts.live/shows/secret-sundaze/episodes/secretsundaze-8th-july-2021
+{
+  status: 200,
+  statusText: 'OK',
+  headers: {
+    'content-type': 'text/html; charset=utf-8',
+    'content-length': '53874',
+    connection: 'close',
+    'access-control-allow-origin': '*, *',
+    'cache-control': 'public, max-age=3600',
+    'content-security-policy': "default-src 'self' *.nts.live *.ntslive.co.uk; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://*.soundcloud.com *.mixcloud.com https://www.google-analytics.com https://ssl.google-analytics.com https://www.googletagmanager.com https://optimize.google.com certify-js.alexametrics.com https://www.youtube.com *.ytimg.com *.list-manage.com https://unpkg.com *.gstatic.com apis.google.com https://js.stripe.com https://www.paypal.com; connect-src *; img-src 'self' data: https:; media-src 'self' https://*.ntslive.net http://*.ntslive.net https://*.ntslive.co.uk https://*.sndcdn.com; style-src 'unsafe-inline' 'self' hello.myfonts.net https://optimize.google.com https://fonts.googleapis.com; worker-src 'self'; child-src 'self' *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com; font-src 'self' data: fonts.gstatic.com; frame-src *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com https://optimize.google.com *.firebaseapp.com https://js.stripe.com *.paypal.com;",
+    date: 'Wed,
+27 Oct 2021 10: 41: 59 GMT',
+    etag: 'W/"d272-Sn8PrYDlOxYtJtOxMPjUruJV55M"',
+    expires: 'Wed,
+27 Oct 2021 11: 41: 57 GMT',
+    server: 'nginx/1.17.10',
+    'strict-transport-security': 'max-age=15552000; includeSubDomains',
+    'x-content-type-options': 'nosniff',
+    'x-dns-prefetch-control': 'off',
+    'x-download-options': 'noopen',
+    'x-frame-options': 'SAMEORIGIN',
+    'x-xss-protection': '1; mode=block',
+    vary: 'Accept-Encoding,Accept',
+    'x-cache': 'Hit from cloudfront',
+    via: '1.1 d11ab7cc015083593a9e8e8e2dac0692.cloudfront.net (CloudFront)',
+    'x-amz-cf-pop': 'AMS50-C1',
+    'x-amz-cf-id': 'xRZsOU-0xshqMt1PHvzZTzq8Jbw-fFqxX5mKchMm7Xyu260Lx8NqNg==',
+    age: '3380'
+},
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+},
+    adapter: [Function: httpAdapter
+],
+    transformRequest: [
+[Function: transformRequest
+]
+],
+    transformResponse: [
+[Function: transformResponse
+]
+],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus
+],
+    headers: {
+      Accept: 'application/json, text/plain, * /*',
+      'User-Agent': 'axios/0.23.0'
+    },
+    method: 'get',
+    url: 'https://www.nts.live/shows/midnight-marauders/episodes/midnight-marauders-w-marshmello-12th-september-2021',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'www.nts.live',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'www.nts.live',
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular *1],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: 136,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object],
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: 'GET /shows/midnight-marauders/episodes/midnight-marauders-w-marshmello-12th-september-2021 HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'User-Agent: axios/0.23.0\r\n' +
+      'Host: www.nts.live\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop
+],
+    agent: Agent {
+      _events: [Object: null prototype
+],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype
+],
+      requests: [Object: null prototype
+] {},
+      sockets: [Object: null prototype
+],
+      freeSockets: [Object: null prototype
+] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 67,
+      maxCachedSessions: 100,
+      _sessionCache: [Object
+],
+[Symbol(kCapture)
+]: false
+},
+    socketPath: undefined,
+    method: 'GET',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    path: '/shows/midnight-marauders/episodes/midnight-marauders-w-marshmello-12th-september-2021',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState
+],
+      _events: [Object: null prototype
+],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      socket: [TLSSocket
+],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array
+],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 200,
+      statusMessage: 'OK',
+      client: [TLSSocket
+],
+      _consuming: true,
+      _dumped: false,
+      req: [Circular *1
+],
+      responseUrl: 'https: //www.nts.live/shows/midnight-marauders/episodes/midnight-marauders-w-marshmello-12th-september-2021',
+      redirects: [],
+[Symbol(kCapture)
+]: false,
+[Symbol(kHeaders)
+]: [Object
+],
+[Symbol(kHeadersCount)
+]: 46,
+[Symbol(kTrailers)
+]: null,
+[Symbol(kTrailersCount)
+]: 0,
+[Symbol(RequestTimeout)
+]: undefined
+},
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'www.nts.live',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState
+],
+      _events: [Object: null prototype
+],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _options: [Object
+],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)
+],
+      _currentRequest: [Circular *1
+],
+      _currentUrl: 'https: //www.nts.live/shows/midnight-marauders/episodes/midnight-marauders-w-marshmello-12th-september-2021',
+[Symbol(kCapture)
+]: false
+},
+[Symbol(kCapture)
+]: false,
+[Symbol(kNeedDrain)
+]: false,
+[Symbol(corked)
+]: 0,
+[Symbol(kOutHeaders)
+]: [Object: null prototype
+] {
+      accept: [Array
+],
+      'user-agent': [Array
+],
+      host: [Array
+]
+}
+},
+  data: '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="NTS Radio"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-site-verification" content="KRa2WWcmg0gMxT-xzixUWXIhxQoAIXVVL1Jdni6M6os"><link rel="preload" href="/css/fonts/Univers-Condensed/UniversCom-57Condensed.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="/css/fonts/UniversLTPro-BoldCond.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preconnect" crossorigin href="https://firebaseinstallations.googleapis.com"><link rel="preconnect" crossorigin href="https://www.google-analytics.com"><link rel="stylesheet" href="/css/style.min.762656f3ae46911d.css"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=47rE43RRzB"><link rel="icon" type="image/png" href="/favicon-32x32.png?v=47rE43RRzB" sizes="32x32"><link rel="icon" type="image/png" href="/favicon-16x16.png?v=47rE43RRzB" sizes="16x16"><link rel="manifest" href="/manifest.json?v=47rE43RRzB"><link rel="mask-icon" href="/safari-pinned-tab.svg?v=47rE43RRzB" color="#000000"><link rel="shortcut icon" href="/favicon.ico?v=47rE43RRzB"><meta name="theme-color" content="#000000"><script type="text/javascript">window.nts_env = {
+"GA_PROPERTY_ID": "UA-6061419-3",
+"GA_MEASUREMENT_ID": "G-WZ3JMJQ60H",
+"GA_MEASUREMENT_ID_MOBILE": "G-NHTR5X7F3C",
+"IOS_APP_ID": "1204567739",
+"OPTIMIZE_ID": "GTM-ND8PTFZ",
+"STRIPE_PUBLISHABLE_KEY": "pk_live_gjV0iVK3tVFDcVv5vhP38ltu00zh0PcuAm"
+};</script>  <title>Midnight Marauders w/ Marshmello 12th September 2021 | Listen on NTS</title><meta name="description" content="Playing Detroit House, Soul, Contemporary Jazz, Broken Beat. Marsha by name and mellow by nature, MarshmeLLo takes you on a musical journey of all her influences plus a little extra. The first show ever broadcast on the station, Marsha continues to find her groove…"><meta name="twitter:card" content="summary_large_image" ><meta name="twitter:site" content="@NTSlive" ><meta name="twitter:image" content="https://media2.ntslive.co.uk/resize/1600x1600/3e428385-ea58-4f96-b9b6-a1d8ce8b8ba6_1562630400.jpeg" ><meta property="og:description" content="Playing Detroit House, Soul, Contemporary Jazz, Broken Beat. Marsha by name and mellow by nature, MarshmeLLo takes you on a musical journey of all her influences plus a little extra. The first show ever broadcast on the station, Marsha continues to find her groove…"><meta property="og:site_name" content="NTS Radio" ><meta property="og:title" content="Midnight Marauders w/ Marshmello  12th September 2021"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nts.live/shows/midnight-marauders/episodes/midnight-marauders-w-marshmello-12th-september-2021"><meta property="og:image" content="https://media2.ntslive.co.uk/resize/1600x1600/3e428385-ea58-4f96-b9b6-a1d8ce8b8ba6_1562630400.jpeg"><meta name="apple-itunes-app" content="app-id=1204567739, app-argument=https://www.nts.live/shows/midnight-marauders/episodes/midnight-marauders-w-marshmello-12th-september-2021"><link rel="canonical" href="https://www.nts.live/shows/midnight-marauders/episodes/midnight-marauders-w-marshmello-12th-september-2021"> </head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-6061419-3"></script><script>window.dataLayer = window.dataLayer || [];\n' +
+    '    function gtag(){dataLayer.push(arguments);
+}\n' +
+    "    gtag('js', new Date());\n" +
+    '\n' +
+    "    gtag('config', window.nts_env.GA_PROPERTY_ID, {\n" +
+    "        'optimize_id': window.nts_env.OPTIMIZE_ID,\n" +
+    "        'anonymize_ip': true,\n" +
+    "        'custom_map': {\n" +
+    "            'dimension1': 'is_authenticated',\n" +
+    "            'dimension2': 'has_subscription',\n" +
+    '
+},\n' +
+    '
+});\n' +
+    "    gtag('config', window.nts_env.GA_MEASUREMENT_ID, {\n" +
+    "      'anonymize_ip': true,\n" +
+    '
+});</script><body><div id="ajax-container">    </div><div id="react-root"><div id="react-content" class=""><div class="snackbar snackbar--fade "></div><span class="hidden"><audio id="nts-player-audio" controls="" preload="none"><source type="audio/mpeg"/></audio></span><div id="mixcloud-player" class="  "><div class="mixcloud-player__container"><div class="mixcloud-player__button-group"><div class="mixcloud-player__button-group-container"><a class="mixcloud-player__text-link mixcloud-player__text-link--tracklist nts-button nts-app" data-track="event" data-category="Navigation" data-target="GoTo-Episode" data-origin="from-mixcloudPlayerLink"><span>TRACKLIST</span></a><button id="mixcloud-player-close" class="mixcloud-player__close nts-button" name="mixcloud-player-close"><span class="icon icon-close-cross"></span></button></div></div><div style="min-width:0;position:relative;width:100%"><div class="iframe-container visuallyhidden"></div><div class="visuallyhidden"></div></div></div></div><div class="footer-player mixtape-player "><div class="footer-player__img-container"></div><div class="footer-player__control-btn"><button class="footer-player__control-btn__icon-container nts-link"><svg class="nts-icon nts-icon--inverted" style="width:30px;height:30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><title>Play</title><g id="_x33_--Hidden-_x28_closing-up_x29_-" transform="translate(-772 -385)"><g id="Drawer" transform="translate(0 43)"><g id="_x32_" transform="translate(18)"><path id="play" d="M1260.4 651.3L882.8 861.2c-4.4 2.4-8.2 2.7-11.2 1-3.1-1.7-4.6-5.1-4.6-10.2V433.2c0-4.8 1.5-8.2 4.6-10.2 3.1-2 6.8-1.7 11.2 1l377.6 210c4.4 2.4 6.6 5.3 6.6 8.7 0 3.3-2.2 6.2-6.6 8.6z"></path></g></g></g></svg></button></div><div class="footer-player__info"></div><button class="footer-player__live-tracks-trigger nts-link no-padding"><svg class="nts-icon nts-icon--inline-alt" style="width:24px;height:24px;fill:white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.87 14.49h8V13h-8zm12-5h-12V11h12zm0-3.5h-12v1.5h12zm6.26 3.34l-2.88-1v7a2.67 2.67 0 01-2 2.61 2.53 2.53 0 01-2.88-1.44 2.73 2.73 0 01.71-3.24 2.49 2.49 0 013.2 0V6l3.84 1.33z"></path></svg></button><div class="footer-player__right-btn-container"><button class="footer-player__right-btn nts-link no-padding"><svg class="nts-icon nts-icon--s nts-icon--inverted" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg></button></div></div><div><div class="navigation-page-overlay "></div><header class="header"><a class="header__home nts-app nts-link" href="/" data-track="event" data-category="Navigation" data-target="GoTo-Home" data-origin="from: header" aria-label="Home"><svg style="fill:#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.7 6.9L22.3 9h-1.5l.5-2c.1-.6.1-1.1-.6-1.1s-1 .5-1.1 1.1l-.4 1.7c-.1.5-.1 1 0 1.5l1.4 4.1c.2.6.3 1.3.1 2l-.6 2.6c-.4 1.5-1.5 2.4-2.9 2.4-1.6 0-2.3-.7-1.9-2.4l.5-2.2h1.5l-.5 2.1c-.2.8 0 1.2.7 1.2.6 0 1-.5 1.2-1.2l.5-2.3c.1-.5.1-1.1-.1-1.6l-1.3-3.8c-.2-.7-.3-1.2-.2-2.1l.4-2c.4-1.6 1.4-2.4 2.9-2.4 1.7 0 2.2.8 1.8 2.3zM11.2 21.1L14.6 6H13l.3-1.3h4.8L17.8 6h-1.7l-3.4 15.1h-1.5zm-4.5 0L8.1 6.6 4.8 21.1H3.5L7.2 4.8h2.2L8 18.7l3.2-14h1.3L8.8 21.1H6.7zM0 26h26V0H0v26z"></path></svg></a><nav class="header__nav text-uppercase hidden-phone"><a class="header-nav-item nts-app nts-link " href="/radio">Radio</a><a class="header-nav-item nts-app nts-link " href="/latest">Latest</a><a class="header-nav-item nts-app nts-link " href="/explore">Explore</a><a class="header-nav-item nts-app nts-link " href="/infinite-mixtapes">Infinite Mixtapes</a><a class="header-nav-cta nts-app nts-button nts-link hidden" href="/supporters">NTS Supporters</a></nav><div class="header__search-form"><form class="search-form" method="get"><button class="search-form__button" aria-label="Search" type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M413.38 392.4a169.89 169.89 0 0 0 18.19-27.4c43-83 10.73-185.28-72.09-228.39a168.63 168.63 0 0 0-227.82 72.27c-43 83-10.74 185.28 72.09 228.39a168.49 168.49 0 0 0 183.35-18L461.62 494l26.56-26.62zm-194.25 15.16C152.67 373 126.77 290.9 161.28 224.28a135.43 135.43 0 0 1 182.82-58c66.46 34.6 92.36 116.66 57.85 183.28a135.43 135.43 0 0 1-182.82 58z"></path></svg></button><input type="text" class="search-form__input nts-input search-btn" name="q" autoComplete="off" value="" aria-label="Search"/></form></div><a class="header-nav-item header-nav-item--alt nts-link text-uppercase hidden-phone" href="https://shop.nts.live/" target="_blank" rel="noopener noreferrer">Shop</a><button class="header-nav-item nts-link hidden-phone" data-track="event" data-category="Navigation" data-target="Open-Chat" data-origin="from: header" aria-label="Open chat"><svg style="height:20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M493 391.73h-45.9v99.35l-128.18-99.35H118V144.92h375z"></path></svg></button><a class="header-nav-item header-nav-item--alt nts-app nts-link hidden-phone " href="/my-nts/favourites/shows" aria-label="My NTS"><svg class="nts-icon--inline nts-icon--inline--xxl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.41a2.92 2.92 0 11-2.95 2.92A2.91 2.91 0 0112 4.41m0-1.58a4.5 4.5 0 104.5 4.5 4.5 4.5 0 00-4.5-4.5zm0 11.71c3.26 0 7.41 1.63 7.41 2.91v1.79H4.55v-1.79c0-1.28 4.16-2.91 7.41-2.91M12 13c-3 0-9 1.51-9 4.5v3.38h18v-3.43c0-3-6-4.5-9-4.5z" data-name="Layer 5"></path></svg><span class="text-uppercase visible-desktop">My NTS</span></a><button class="header__menu-toggle  nts-link" aria-label="Toggle navigation menu"><svg class="header__menu-toggle__icon header__menu-toggle__icon--cross" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg><svg class="header__menu-toggle__icon he'... 43848 more characters
+}
+
+ No html element found called react-state 
+
+URL scraped into db: https: //www.nts.live/shows/midnight-marauders/episodes/midnight-marauders-w-marshmello-12th-september-2021
+{
+  status: 200,
+  statusText: 'OK',
+  headers: {
+    'content-type': 'text/html; charset=utf-8',
+    'content-length': '48981',
+    connection: 'close',
+    'access-control-allow-origin': '*, *',
+    'cache-control': 'public, max-age=21600',
+    'content-security-policy': "default-src 'self' *.nts.live *.ntslive.co.uk; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://*.soundcloud.com *.mixcloud.com https://www.google-analytics.com https://ssl.google-analytics.com https://www.googletagmanager.com https://optimize.google.com certify-js.alexametrics.com https://www.youtube.com *.ytimg.com *.list-manage.com https://unpkg.com *.gstatic.com apis.google.com https://js.stripe.com https://www.paypal.com; connect-src *; img-src 'self' data: https:; media-src 'self' https://*.ntslive.net http://*.ntslive.net https://*.ntslive.co.uk https://*.sndcdn.com; style-src 'unsafe-inline' 'self' hello.myfonts.net https://optimize.google.com https://fonts.googleapis.com; worker-src 'self'; child-src 'self' *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com; font-src 'self' data: fonts.gstatic.com; frame-src *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com https://optimize.google.com *.firebaseapp.com https://js.stripe.com *.paypal.com;",
+    date: 'Wed,
+27 Oct 2021 10: 41: 59 GMT',
+    etag: 'W/"bf55-pQWM/NeXTfqibw5q3PPOfK9Hw0U"',
+    expires: 'Wed,
+27 Oct 2021 16: 41: 59 GMT',
+    server: 'nginx/1.17.10',
+    'strict-transport-security': 'max-age=15552000; includeSubDomains',
+    'x-content-type-options': 'nosniff',
+    'x-dns-prefetch-control': 'off',
+    'x-download-options': 'noopen',
+    'x-frame-options': 'SAMEORIGIN',
+    'x-xss-protection': '1; mode=block',
+    vary: 'Accept-Encoding,Accept',
+    'x-cache': 'Hit from cloudfront',
+    via: '1.1 9463f100725b8b17da2d778617835761.cloudfront.net (CloudFront)',
+    'x-amz-cf-pop': 'AMS50-C1',
+    'x-amz-cf-id': 'vw6H74_S1VOPl2hRzIByDy5OlszDJv6ThxxUqh0NJqwnSao-Skox6g==',
+    age: '3380'
+},
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+},
+    adapter: [Function: httpAdapter
+],
+    transformRequest: [
+[Function: transformRequest
+]
+],
+    transformResponse: [
+[Function: transformResponse
+]
+],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus
+],
+    headers: {
+      Accept: 'application/json, text/plain, * /*',
+      'User-Agent': 'axios/0.23.0'
+    },
+    method: 'get',
+    url: 'https://www.nts.live/shows/sun-cut/episodes/suncut-15th-march-2021',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'www.nts.live',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'www.nts.live',
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular *1],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: 36,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object],
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: 'GET /shows/sun-cut/episodes/suncut-15th-march-2021 HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'User-Agent: axios/0.23.0\r\n' +
+      'Host: www.nts.live\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop
+],
+    agent: Agent {
+      _events: [Object: null prototype
+],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype
+],
+      requests: [Object: null prototype
+] {},
+      sockets: [Object: null prototype
+],
+      freeSockets: [Object: null prototype
+] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 67,
+      maxCachedSessions: 100,
+      _sessionCache: [Object
+],
+[Symbol(kCapture)
+]: false
+},
+    socketPath: undefined,
+    method: 'GET',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    path: '/shows/sun-cut/episodes/suncut-15th-march-2021',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState
+],
+      _events: [Object: null prototype
+],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      socket: [TLSSocket
+],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array
+],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 200,
+      statusMessage: 'OK',
+      client: [TLSSocket
+],
+      _consuming: true,
+      _dumped: false,
+      req: [Circular *1
+],
+      responseUrl: 'https: //www.nts.live/shows/sun-cut/episodes/suncut-15th-march-2021',
+      redirects: [],
+[Symbol(kCapture)
+]: false,
+[Symbol(kHeaders)
+]: [Object
+],
+[Symbol(kHeadersCount)
+]: 46,
+[Symbol(kTrailers)
+]: null,
+[Symbol(kTrailersCount)
+]: 0,
+[Symbol(RequestTimeout)
+]: undefined
+},
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'www.nts.live',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState
+],
+      _events: [Object: null prototype
+],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _options: [Object
+],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)
+],
+      _currentRequest: [Circular *1
+],
+      _currentUrl: 'https: //www.nts.live/shows/sun-cut/episodes/suncut-15th-march-2021',
+[Symbol(kCapture)
+]: false
+},
+[Symbol(kCapture)
+]: false,
+[Symbol(kNeedDrain)
+]: false,
+[Symbol(corked)
+]: 0,
+[Symbol(kOutHeaders)
+]: [Object: null prototype
+] {
+      accept: [Array
+],
+      'user-agent': [Array
+],
+      host: [Array
+]
+}
+},
+  data: '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="NTS Radio"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-site-verification" content="KRa2WWcmg0gMxT-xzixUWXIhxQoAIXVVL1Jdni6M6os"><link rel="preload" href="/css/fonts/Univers-Condensed/UniversCom-57Condensed.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="/css/fonts/UniversLTPro-BoldCond.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preconnect" crossorigin href="https://firebaseinstallations.googleapis.com"><link rel="preconnect" crossorigin href="https://www.google-analytics.com"><link rel="stylesheet" href="/css/style.min.762656f3ae46911d.css"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=47rE43RRzB"><link rel="icon" type="image/png" href="/favicon-32x32.png?v=47rE43RRzB" sizes="32x32"><link rel="icon" type="image/png" href="/favicon-16x16.png?v=47rE43RRzB" sizes="16x16"><link rel="manifest" href="/manifest.json?v=47rE43RRzB"><link rel="mask-icon" href="/safari-pinned-tab.svg?v=47rE43RRzB" color="#000000"><link rel="shortcut icon" href="/favicon.ico?v=47rE43RRzB"><meta name="theme-color" content="#000000"><script type="text/javascript">window.nts_env = {
+"GA_PROPERTY_ID": "UA-6061419-3",
+"GA_MEASUREMENT_ID": "G-WZ3JMJQ60H",
+"GA_MEASUREMENT_ID_MOBILE": "G-NHTR5X7F3C",
+"IOS_APP_ID": "1204567739",
+"OPTIMIZE_ID": "GTM-ND8PTFZ",
+"STRIPE_PUBLISHABLE_KEY": "pk_live_gjV0iVK3tVFDcVv5vhP38ltu00zh0PcuAm"
+};</script>  <title>Suncut 15th March 2021 | Listen on NTS</title><meta name="description" content="Playing Funk, Soul, Classic Disco. Tune in to the sound of SUNCUT, boasting a heartfelt selection of some favourite 45’s through to classic bonafide soulful jams."><meta name="twitter:card" content="summary_large_image" ><meta name="twitter:site" content="@NTSlive" ><meta name="twitter:image" content="https://media2.ntslive.co.uk/resize/1600x1600/ac62fef4-b15d-479e-a672-4318ff1c9651_1457481600.jpeg" ><meta property="og:description" content="Playing Funk, Soul, Classic Disco. Tune in to the sound of SUNCUT, boasting a heartfelt selection of some favourite 45’s through to classic bonafide soulful jams."><meta property="og:site_name" content="NTS Radio" ><meta property="og:title" content="Suncut  15th March 2021"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nts.live/shows/sun-cut/episodes/suncut-15th-march-2021"><meta property="og:image" content="https://media2.ntslive.co.uk/resize/1600x1600/ac62fef4-b15d-479e-a672-4318ff1c9651_1457481600.jpeg"><meta name="apple-itunes-app" content="app-id=1204567739, app-argument=https://www.nts.live/shows/sun-cut/episodes/suncut-15th-march-2021"><link rel="canonical" href="https://www.nts.live/shows/sun-cut/episodes/suncut-15th-march-2021"> </head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-6061419-3"></script><script>window.dataLayer = window.dataLayer || [];\n' +
+    '    function gtag(){dataLayer.push(arguments);
+}\n' +
+    "    gtag('js', new Date());\n" +
+    '\n' +
+    "    gtag('config', window.nts_env.GA_PROPERTY_ID, {\n" +
+    "        'optimize_id': window.nts_env.OPTIMIZE_ID,\n" +
+    "        'anonymize_ip': true,\n" +
+    "        'custom_map': {\n" +
+    "            'dimension1': 'is_authenticated',\n" +
+    "            'dimension2': 'has_subscription',\n" +
+    '
+},\n' +
+    '
+});\n' +
+    "    gtag('config', window.nts_env.GA_MEASUREMENT_ID, {\n" +
+    "      'anonymize_ip': true,\n" +
+    '
+});</script><body><div id="ajax-container">    </div><div id="react-root"><div id="react-content" class=""><div class="snackbar snackbar--fade "></div><span class="hidden"><audio id="nts-player-audio" controls="" preload="none"><source type="audio/mpeg"/></audio></span><div id="mixcloud-player" class="  "><div class="mixcloud-player__container"><div class="mixcloud-player__button-group"><div class="mixcloud-player__button-group-container"><a class="mixcloud-player__text-link mixcloud-player__text-link--tracklist nts-button nts-app" data-track="event" data-category="Navigation" data-target="GoTo-Episode" data-origin="from-mixcloudPlayerLink"><span>TRACKLIST</span></a><button id="mixcloud-player-close" class="mixcloud-player__close nts-button" name="mixcloud-player-close"><span class="icon icon-close-cross"></span></button></div></div><div style="min-width:0;position:relative;width:100%"><div class="iframe-container visuallyhidden"></div><div class="visuallyhidden"></div></div></div></div><div class="footer-player mixtape-player "><div class="footer-player__img-container"></div><div class="footer-player__control-btn"><button class="footer-player__control-btn__icon-container nts-link"><svg class="nts-icon nts-icon--inverted" style="width:30px;height:30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><title>Play</title><g id="_x33_--Hidden-_x28_closing-up_x29_-" transform="translate(-772 -385)"><g id="Drawer" transform="translate(0 43)"><g id="_x32_" transform="translate(18)"><path id="play" d="M1260.4 651.3L882.8 861.2c-4.4 2.4-8.2 2.7-11.2 1-3.1-1.7-4.6-5.1-4.6-10.2V433.2c0-4.8 1.5-8.2 4.6-10.2 3.1-2 6.8-1.7 11.2 1l377.6 210c4.4 2.4 6.6 5.3 6.6 8.7 0 3.3-2.2 6.2-6.6 8.6z"></path></g></g></g></svg></button></div><div class="footer-player__info"></div><button class="footer-player__live-tracks-trigger nts-link no-padding"><svg class="nts-icon nts-icon--inline-alt" style="width:24px;height:24px;fill:white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.87 14.49h8V13h-8zm12-5h-12V11h12zm0-3.5h-12v1.5h12zm6.26 3.34l-2.88-1v7a2.67 2.67 0 01-2 2.61 2.53 2.53 0 01-2.88-1.44 2.73 2.73 0 01.71-3.24 2.49 2.49 0 013.2 0V6l3.84 1.33z"></path></svg></button><div class="footer-player__right-btn-container"><button class="footer-player__right-btn nts-link no-padding"><svg class="nts-icon nts-icon--s nts-icon--inverted" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg></button></div></div><div><div class="navigation-page-overlay "></div><header class="header"><a class="header__home nts-app nts-link" href="/" data-track="event" data-category="Navigation" data-target="GoTo-Home" data-origin="from: header" aria-label="Home"><svg style="fill:#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.7 6.9L22.3 9h-1.5l.5-2c.1-.6.1-1.1-.6-1.1s-1 .5-1.1 1.1l-.4 1.7c-.1.5-.1 1 0 1.5l1.4 4.1c.2.6.3 1.3.1 2l-.6 2.6c-.4 1.5-1.5 2.4-2.9 2.4-1.6 0-2.3-.7-1.9-2.4l.5-2.2h1.5l-.5 2.1c-.2.8 0 1.2.7 1.2.6 0 1-.5 1.2-1.2l.5-2.3c.1-.5.1-1.1-.1-1.6l-1.3-3.8c-.2-.7-.3-1.2-.2-2.1l.4-2c.4-1.6 1.4-2.4 2.9-2.4 1.7 0 2.2.8 1.8 2.3zM11.2 21.1L14.6 6H13l.3-1.3h4.8L17.8 6h-1.7l-3.4 15.1h-1.5zm-4.5 0L8.1 6.6 4.8 21.1H3.5L7.2 4.8h2.2L8 18.7l3.2-14h1.3L8.8 21.1H6.7zM0 26h26V0H0v26z"></path></svg></a><nav class="header__nav text-uppercase hidden-phone"><a class="header-nav-item nts-app nts-link " href="/radio">Radio</a><a class="header-nav-item nts-app nts-link " href="/latest">Latest</a><a class="header-nav-item nts-app nts-link " href="/explore">Explore</a><a class="header-nav-item nts-app nts-link " href="/infinite-mixtapes">Infinite Mixtapes</a><a class="header-nav-cta nts-app nts-button nts-link hidden" href="/supporters">NTS Supporters</a></nav><div class="header__search-form"><form class="search-form" method="get"><button class="search-form__button" aria-label="Search" type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M413.38 392.4a169.89 169.89 0 0 0 18.19-27.4c43-83 10.73-185.28-72.09-228.39a168.63 168.63 0 0 0-227.82 72.27c-43 83-10.74 185.28 72.09 228.39a168.49 168.49 0 0 0 183.35-18L461.62 494l26.56-26.62zm-194.25 15.16C152.67 373 126.77 290.9 161.28 224.28a135.43 135.43 0 0 1 182.82-58c66.46 34.6 92.36 116.66 57.85 183.28a135.43 135.43 0 0 1-182.82 58z"></path></svg></button><input type="text" class="search-form__input nts-input search-btn" name="q" autoComplete="off" value="" aria-label="Search"/></form></div><a class="header-nav-item header-nav-item--alt nts-link text-uppercase hidden-phone" href="https://shop.nts.live/" target="_blank" rel="noopener noreferrer">Shop</a><button class="header-nav-item nts-link hidden-phone" data-track="event" data-category="Navigation" data-target="Open-Chat" data-origin="from: header" aria-label="Open chat"><svg style="height:20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M493 391.73h-45.9v99.35l-128.18-99.35H118V144.92h375z"></path></svg></button><a class="header-nav-item header-nav-item--alt nts-app nts-link hidden-phone " href="/my-nts/favourites/shows" aria-label="My NTS"><svg class="nts-icon--inline nts-icon--inline--xxl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.41a2.92 2.92 0 11-2.95 2.92A2.91 2.91 0 0112 4.41m0-1.58a4.5 4.5 0 104.5 4.5 4.5 4.5 0 00-4.5-4.5zm0 11.71c3.26 0 7.41 1.63 7.41 2.91v1.79H4.55v-1.79c0-1.28 4.16-2.91 7.41-2.91M12 13c-3 0-9 1.51-9 4.5v3.38h18v-3.43c0-3-6-4.5-9-4.5z" data-name="Layer 5"></path></svg><span class="text-uppercase visible-desktop">My NTS</span></a><button class="header__menu-toggle  nts-link" aria-label="Toggle navigation menu"><svg class="header__menu-toggle__icon header__menu-toggle__icon--cross" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg><svg class="header__menu-toggle__icon header__menu-toggle__icon--ellipsis" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M150.39 340a37.5 37.5 0 1 1 37.5-37.5 37.5 37.5 0 0 1-37.5 37.5zm150 0a37.5 37.5 0 1 1 37.5-37.5 37.5 37.5 0 0 1-37.5 37.5zm150 0a37.5 37.5 0 1 1 37.5-37.5 37.5 37.5 0 0 1-37.5 37.5z"></path><path fill="none" d="M0 2h600v600H0z"></path></svg><svg class="header__menu-toggle__icon heade'... 38938 more characters
+}
+
+ No html element found called react-state 
+
+URL scraped into db: https: //www.nts.live/shows/sun-cut/episodes/suncut-15th-march-2021
+{
+  status: 200,
+  statusText: 'OK',
+  headers: {
+    'content-type': 'text/html; charset=utf-8',
+    'content-length': '48401',
+    connection: 'close',
+    'access-control-allow-origin': '*, *',
+    'cache-control': 'public, max-age=21600',
+    'content-security-policy': "default-src 'self' *.nts.live *.ntslive.co.uk; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://*.soundcloud.com *.mixcloud.com https://www.google-analytics.com https://ssl.google-analytics.com https://www.googletagmanager.com https://optimize.google.com certify-js.alexametrics.com https://www.youtube.com *.ytimg.com *.list-manage.com https://unpkg.com *.gstatic.com apis.google.com https://js.stripe.com https://www.paypal.com; connect-src *; img-src 'self' data: https:; media-src 'self' https://*.ntslive.net http://*.ntslive.net https://*.ntslive.co.uk https://*.sndcdn.com; style-src 'unsafe-inline' 'self' hello.myfonts.net https://optimize.google.com https://fonts.googleapis.com; worker-src 'self'; child-src 'self' *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com; font-src 'self' data: fonts.gstatic.com; frame-src *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com https://optimize.google.com *.firebaseapp.com https://js.stripe.com *.paypal.com;",
+    date: 'Wed,
+27 Oct 2021 10: 41: 59 GMT',
+    etag: 'W/"bd11-gYxAN6Lt8edQLhyQ0KWVSQ9nOR8"',
+    expires: 'Wed,
+27 Oct 2021 16: 41: 59 GMT',
+    server: 'nginx/1.17.10',
+    'strict-transport-security': 'max-age=15552000; includeSubDomains',
+    'x-content-type-options': 'nosniff',
+    'x-dns-prefetch-control': 'off',
+    'x-download-options': 'noopen',
+    'x-frame-options': 'SAMEORIGIN',
+    'x-xss-protection': '1; mode=block',
+    vary: 'Accept-Encoding,Accept',
+    'x-cache': 'Hit from cloudfront',
+    via: '1.1 ef2cb74895744344a0ea2100fbbb760a.cloudfront.net (CloudFront)',
+    'x-amz-cf-pop': 'AMS50-C1',
+    'x-amz-cf-id': 'fVn14Tzolf7ppM4TsvYBRY0iNeSAu9l4nnHXVYmR1UnmKGuPBUBV6g==',
+    age: '3380'
+},
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+},
+    adapter: [Function: httpAdapter
+],
+    transformRequest: [
+[Function: transformRequest
+]
+],
+    transformResponse: [
+[Function: transformResponse
+]
+],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus
+],
+    headers: {
+      Accept: 'application/json, text/plain, * /*',
+      'User-Agent': 'axios/0.23.0'
+    },
+    method: 'get',
+    url: 'https://www.nts.live/shows/fred-p/episodes/perpetual-sound-w-fred-p-6th-march-2021',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'www.nts.live',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'www.nts.live',
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular *1],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: 106,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object],
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: 'GET /shows/fred-p/episodes/perpetual-sound-w-fred-p-6th-march-2021 HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'User-Agent: axios/0.23.0\r\n' +
+      'Host: www.nts.live\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop
+],
+    agent: Agent {
+      _events: [Object: null prototype
+],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype
+],
+      requests: [Object: null prototype
+] {},
+      sockets: [Object: null prototype
+],
+      freeSockets: [Object: null prototype
+] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 67,
+      maxCachedSessions: 100,
+      _sessionCache: [Object
+],
+[Symbol(kCapture)
+]: false
+},
+    socketPath: undefined,
+    method: 'GET',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    path: '/shows/fred-p/episodes/perpetual-sound-w-fred-p-6th-march-2021',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState
+],
+      _events: [Object: null prototype
+],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      socket: [TLSSocket
+],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array
+],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 200,
+      statusMessage: 'OK',
+      client: [TLSSocket
+],
+      _consuming: true,
+      _dumped: false,
+      req: [Circular *1
+],
+      responseUrl: 'https: //www.nts.live/shows/fred-p/episodes/perpetual-sound-w-fred-p-6th-march-2021',
+      redirects: [],
+[Symbol(kCapture)
+]: false,
+[Symbol(kHeaders)
+]: [Object
+],
+[Symbol(kHeadersCount)
+]: 46,
+[Symbol(kTrailers)
+]: null,
+[Symbol(kTrailersCount)
+]: 0,
+[Symbol(RequestTimeout)
+]: undefined
+},
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'www.nts.live',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState
+],
+      _events: [Object: null prototype
+],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _options: [Object
+],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)
+],
+      _currentRequest: [Circular *1
+],
+      _currentUrl: 'https: //www.nts.live/shows/fred-p/episodes/perpetual-sound-w-fred-p-6th-march-2021',
+[Symbol(kCapture)
+]: false
+},
+[Symbol(kCapture)
+]: false,
+[Symbol(kNeedDrain)
+]: false,
+[Symbol(corked)
+]: 0,
+[Symbol(kOutHeaders)
+]: [Object: null prototype
+] {
+      accept: [Array
+],
+      'user-agent': [Array
+],
+      host: [Array
+]
+}
+},
+  data: '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="NTS Radio"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-site-verification" content="KRa2WWcmg0gMxT-xzixUWXIhxQoAIXVVL1Jdni6M6os"><link rel="preload" href="/css/fonts/Univers-Condensed/UniversCom-57Condensed.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="/css/fonts/UniversLTPro-BoldCond.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preconnect" crossorigin href="https://firebaseinstallations.googleapis.com"><link rel="preconnect" crossorigin href="https://www.google-analytics.com"><link rel="stylesheet" href="/css/style.min.762656f3ae46911d.css"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=47rE43RRzB"><link rel="icon" type="image/png" href="/favicon-32x32.png?v=47rE43RRzB" sizes="32x32"><link rel="icon" type="image/png" href="/favicon-16x16.png?v=47rE43RRzB" sizes="16x16"><link rel="manifest" href="/manifest.json?v=47rE43RRzB"><link rel="mask-icon" href="/safari-pinned-tab.svg?v=47rE43RRzB" color="#000000"><link rel="shortcut icon" href="/favicon.ico?v=47rE43RRzB"><meta name="theme-color" content="#000000"><script type="text/javascript">window.nts_env = {
+"GA_PROPERTY_ID": "UA-6061419-3",
+"GA_MEASUREMENT_ID": "G-WZ3JMJQ60H",
+"GA_MEASUREMENT_ID_MOBILE": "G-NHTR5X7F3C",
+"IOS_APP_ID": "1204567739",
+"OPTIMIZE_ID": "GTM-ND8PTFZ",
+"STRIPE_PUBLISHABLE_KEY": "pk_live_gjV0iVK3tVFDcVv5vhP38ltu00zh0PcuAm"
+};</script>  <title>Perpetual Sound w/ Fred P 7th March 2021 | Listen on NTS</title><meta name="description" content="Playing Deep House, Soul. Fred P, a.k.a Black Jazz Consortium, brings deep underground music for the mind, body and soul, as well as music from his label, Soul People Music. One hour a month on stream 2."><meta name="twitter:card" content="summary_large_image" ><meta name="twitter:site" content="@NTSlive" ><meta name="twitter:image" content="https://media2.ntslive.co.uk/resize/1600x1600/7edccdd4-3422-4f18-a55f-0fc8f0f1d6fc_1481760000.jpeg" ><meta property="og:description" content="Playing Deep House, Soul. Fred P, a.k.a Black Jazz Consortium, brings deep underground music for the mind, body and soul, as well as music from his label, Soul People Music. One hour a month on stream 2."><meta property="og:site_name" content="NTS Radio" ><meta property="og:title" content="Perpetual Sound w/ Fred P  7th March 2021"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nts.live/shows/fred-p/episodes/perpetual-sound-w-fred-p-6th-march-2021"><meta property="og:image" content="https://media2.ntslive.co.uk/resize/1600x1600/7edccdd4-3422-4f18-a55f-0fc8f0f1d6fc_1481760000.jpeg"><meta name="apple-itunes-app" content="app-id=1204567739, app-argument=https://www.nts.live/shows/fred-p/episodes/perpetual-sound-w-fred-p-6th-march-2021"><link rel="canonical" href="https://www.nts.live/shows/fred-p/episodes/perpetual-sound-w-fred-p-6th-march-2021"> </head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-6061419-3"></script><script>window.dataLayer = window.dataLayer || [];\n' +
+    '    function gtag(){dataLayer.push(arguments);
+}\n' +
+    "    gtag('js', new Date());\n" +
+    '\n' +
+    "    gtag('config', window.nts_env.GA_PROPERTY_ID, {\n" +
+    "        'optimize_id': window.nts_env.OPTIMIZE_ID,\n" +
+    "        'anonymize_ip': true,\n" +
+    "        'custom_map': {\n" +
+    "            'dimension1': 'is_authenticated',\n" +
+    "            'dimension2': 'has_subscription',\n" +
+    '
+},\n' +
+    '
+});\n' +
+    "    gtag('config', window.nts_env.GA_MEASUREMENT_ID, {\n" +
+    "      'anonymize_ip': true,\n" +
+    '
+});</script><body><div id="ajax-container">    </div><div id="react-root"><div id="react-content" class=""><div class="snackbar snackbar--fade "></div><span class="hidden"><audio id="nts-player-audio" controls="" preload="none"><source type="audio/mpeg"/></audio></span><div id="mixcloud-player" class="  "><div class="mixcloud-player__container"><div class="mixcloud-player__button-group"><div class="mixcloud-player__button-group-container"><a class="mixcloud-player__text-link mixcloud-player__text-link--tracklist nts-button nts-app" data-track="event" data-category="Navigation" data-target="GoTo-Episode" data-origin="from-mixcloudPlayerLink"><span>TRACKLIST</span></a><button id="mixcloud-player-close" class="mixcloud-player__close nts-button" name="mixcloud-player-close"><span class="icon icon-close-cross"></span></button></div></div><div style="min-width:0;position:relative;width:100%"><div class="iframe-container visuallyhidden"></div><div class="visuallyhidden"></div></div></div></div><div class="footer-player mixtape-player "><div class="footer-player__img-container"></div><div class="footer-player__control-btn"><button class="footer-player__control-btn__icon-container nts-link"><svg class="nts-icon nts-icon--inverted" style="width:30px;height:30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><title>Play</title><g id="_x33_--Hidden-_x28_closing-up_x29_-" transform="translate(-772 -385)"><g id="Drawer" transform="translate(0 43)"><g id="_x32_" transform="translate(18)"><path id="play" d="M1260.4 651.3L882.8 861.2c-4.4 2.4-8.2 2.7-11.2 1-3.1-1.7-4.6-5.1-4.6-10.2V433.2c0-4.8 1.5-8.2 4.6-10.2 3.1-2 6.8-1.7 11.2 1l377.6 210c4.4 2.4 6.6 5.3 6.6 8.7 0 3.3-2.2 6.2-6.6 8.6z"></path></g></g></g></svg></button></div><div class="footer-player__info"></div><button class="footer-player__live-tracks-trigger nts-link no-padding"><svg class="nts-icon nts-icon--inline-alt" style="width:24px;height:24px;fill:white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.87 14.49h8V13h-8zm12-5h-12V11h12zm0-3.5h-12v1.5h12zm6.26 3.34l-2.88-1v7a2.67 2.67 0 01-2 2.61 2.53 2.53 0 01-2.88-1.44 2.73 2.73 0 01.71-3.24 2.49 2.49 0 013.2 0V6l3.84 1.33z"></path></svg></button><div class="footer-player__right-btn-container"><button class="footer-player__right-btn nts-link no-padding"><svg class="nts-icon nts-icon--s nts-icon--inverted" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg></button></div></div><div><div class="navigation-page-overlay "></div><header class="header"><a class="header__home nts-app nts-link" href="/" data-track="event" data-category="Navigation" data-target="GoTo-Home" data-origin="from: header" aria-label="Home"><svg style="fill:#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.7 6.9L22.3 9h-1.5l.5-2c.1-.6.1-1.1-.6-1.1s-1 .5-1.1 1.1l-.4 1.7c-.1.5-.1 1 0 1.5l1.4 4.1c.2.6.3 1.3.1 2l-.6 2.6c-.4 1.5-1.5 2.4-2.9 2.4-1.6 0-2.3-.7-1.9-2.4l.5-2.2h1.5l-.5 2.1c-.2.8 0 1.2.7 1.2.6 0 1-.5 1.2-1.2l.5-2.3c.1-.5.1-1.1-.1-1.6l-1.3-3.8c-.2-.7-.3-1.2-.2-2.1l.4-2c.4-1.6 1.4-2.4 2.9-2.4 1.7 0 2.2.8 1.8 2.3zM11.2 21.1L14.6 6H13l.3-1.3h4.8L17.8 6h-1.7l-3.4 15.1h-1.5zm-4.5 0L8.1 6.6 4.8 21.1H3.5L7.2 4.8h2.2L8 18.7l3.2-14h1.3L8.8 21.1H6.7zM0 26h26V0H0v26z"></path></svg></a><nav class="header__nav text-uppercase hidden-phone"><a class="header-nav-item nts-app nts-link " href="/radio">Radio</a><a class="header-nav-item nts-app nts-link " href="/latest">Latest</a><a class="header-nav-item nts-app nts-link " href="/explore">Explore</a><a class="header-nav-item nts-app nts-link " href="/infinite-mixtapes">Infinite Mixtapes</a><a class="header-nav-cta nts-app nts-button nts-link hidden" href="/supporters">NTS Supporters</a></nav><div class="header__search-form"><form class="search-form" method="get"><button class="search-form__button" aria-label="Search" type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M413.38 392.4a169.89 169.89 0 0 0 18.19-27.4c43-83 10.73-185.28-72.09-228.39a168.63 168.63 0 0 0-227.82 72.27c-43 83-10.74 185.28 72.09 228.39a168.49 168.49 0 0 0 183.35-18L461.62 494l26.56-26.62zm-194.25 15.16C152.67 373 126.77 290.9 161.28 224.28a135.43 135.43 0 0 1 182.82-58c66.46 34.6 92.36 116.66 57.85 183.28a135.43 135.43 0 0 1-182.82 58z"></path></svg></button><input type="text" class="search-form__input nts-input search-btn" name="q" autoComplete="off" value="" aria-label="Search"/></form></div><a class="header-nav-item header-nav-item--alt nts-link text-uppercase hidden-phone" href="https://shop.nts.live/" target="_blank" rel="noopener noreferrer">Shop</a><button class="header-nav-item nts-link hidden-phone" data-track="event" data-category="Navigation" data-target="Open-Chat" data-origin="from: header" aria-label="Open chat"><svg style="height:20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M493 391.73h-45.9v99.35l-128.18-99.35H118V144.92h375z"></path></svg></button><a class="header-nav-item header-nav-item--alt nts-app nts-link hidden-phone " href="/my-nts/favourites/shows" aria-label="My NTS"><svg class="nts-icon--inline nts-icon--inline--xxl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.41a2.92 2.92 0 11-2.95 2.92A2.91 2.91 0 0112 4.41m0-1.58a4.5 4.5 0 104.5 4.5 4.5 4.5 0 00-4.5-4.5zm0 11.71c3.26 0 7.41 1.63 7.41 2.91v1.79H4.55v-1.79c0-1.28 4.16-2.91 7.41-2.91M12 13c-3 0-9 1.51-9 4.5v3.38h18v-3.43c0-3-6-4.5-9-4.5z" data-name="Layer 5"></path></svg><span class="text-uppercase visible-desktop">My NTS</span></a><button class="header__menu-toggle  nts-link" aria-label="Toggle navigation menu"><svg class="header__menu-toggle__icon header__menu-toggle__icon--cross" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg><svg class="header__menu-toggle__icon header__menu-toggle__icon--ellipsis" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M150.39 340a37.5 37.5 0 1 1 37.5-37.5 37.5 37.5 0 0 1-37.5 37.5zm150 0a37.5 37.5 0 1 1 37.5-37.5 37.5 37.5 0 0 1-37.5 3'... 38389 more characters
+}
+
+ No html element found called react-state 
+
+URL scraped into db: https: //www.nts.live/shows/fred-p/episodes/perpetual-sound-w-fred-p-6th-march-2021
+{
+  status: 200,
+  statusText: 'OK',
+  headers: {
+    'content-type': 'text/html; charset=utf-8',
+    'content-length': '54885',
+    connection: 'close',
+    'access-control-allow-origin': '*, *',
+    'cache-control': 'public, max-age=3600',
+    'content-security-policy': "default-src 'self' *.nts.live *.ntslive.co.uk; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://*.soundcloud.com *.mixcloud.com https://www.google-analytics.com https://ssl.google-analytics.com https://www.googletagmanager.com https://optimize.google.com certify-js.alexametrics.com https://www.youtube.com *.ytimg.com *.list-manage.com https://unpkg.com *.gstatic.com apis.google.com https://js.stripe.com https://www.paypal.com; connect-src *; img-src 'self' data: https:; media-src 'self' https://*.ntslive.net http://*.ntslive.net https://*.ntslive.co.uk https://*.sndcdn.com; style-src 'unsafe-inline' 'self' hello.myfonts.net https://optimize.google.com https://fonts.googleapis.com; worker-src 'self'; child-src 'self' *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com; font-src 'self' data: fonts.gstatic.com; frame-src *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com https://optimize.google.com *.firebaseapp.com https://js.stripe.com *.paypal.com;",
+    date: 'Wed,
+27 Oct 2021 10: 41: 59 GMT',
+    etag: 'W/"d665-cXmeVhN6cPt/sExAbYlg8PB0gCM"',
+    expires: 'Wed,
+27 Oct 2021 11: 41: 57 GMT',
+    server: 'nginx/1.17.10',
+    'strict-transport-security': 'max-age=15552000; includeSubDomains',
+    'x-content-type-options': 'nosniff',
+    'x-dns-prefetch-control': 'off',
+    'x-download-options': 'noopen',
+    'x-frame-options': 'SAMEORIGIN',
+    'x-xss-protection': '1; mode=block',
+    vary: 'Accept-Encoding,Accept',
+    'x-cache': 'Hit from cloudfront',
+    via: '1.1 415e8d76bf2c69e5e03b89ba8461cd7e.cloudfront.net (CloudFront)',
+    'x-amz-cf-pop': 'AMS50-C1',
+    'x-amz-cf-id': 'Dvt1zA8FBbQlziWW0KbUhFKaPo-EI9Z41enTXSGdYGEqieyzXwMW_A==',
+    age: '3380'
+},
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+},
+    adapter: [Function: httpAdapter
+],
+    transformRequest: [
+[Function: transformRequest
+]
+],
+    transformResponse: [
+[Function: transformResponse
+]
+],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus
+],
+    headers: {
+      Accept: 'application/json, text/plain, * /*',
+      'User-Agent': 'axios/0.23.0'
+    },
+    method: 'get',
+    url: 'https://www.nts.live/shows/mrbeatnick/episodes/mr-beatnick-5th-october-2021',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'www.nts.live',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'www.nts.live',
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular *1],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: 131,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object],
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: 'GET /shows/mrbeatnick/episodes/mr-beatnick-5th-october-2021 HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'User-Agent: axios/0.23.0\r\n' +
+      'Host: www.nts.live\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop
+],
+    agent: Agent {
+      _events: [Object: null prototype
+],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype
+],
+      requests: [Object: null prototype
+] {},
+      sockets: [Object: null prototype
+],
+      freeSockets: [Object: null prototype
+] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 67,
+      maxCachedSessions: 100,
+      _sessionCache: [Object
+],
+[Symbol(kCapture)
+]: false
+},
+    socketPath: undefined,
+    method: 'GET',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    path: '/shows/mrbeatnick/episodes/mr-beatnick-5th-october-2021',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState
+],
+      _events: [Object: null prototype
+],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      socket: [TLSSocket
+],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array
+],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 200,
+      statusMessage: 'OK',
+      client: [TLSSocket
+],
+      _consuming: true,
+      _dumped: false,
+      req: [Circular *1
+],
+      responseUrl: 'https: //www.nts.live/shows/mrbeatnick/episodes/mr-beatnick-5th-october-2021',
+      redirects: [],
+[Symbol(kCapture)
+]: false,
+[Symbol(kHeaders)
+]: [Object
+],
+[Symbol(kHeadersCount)
+]: 46,
+[Symbol(kTrailers)
+]: null,
+[Symbol(kTrailersCount)
+]: 0,
+[Symbol(RequestTimeout)
+]: undefined
+},
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'www.nts.live',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState
+],
+      _events: [Object: null prototype
+],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _options: [Object
+],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)
+],
+      _currentRequest: [Circular *1
+],
+      _currentUrl: 'https: //www.nts.live/shows/mrbeatnick/episodes/mr-beatnick-5th-october-2021',
+[Symbol(kCapture)
+]: false
+},
+[Symbol(kCapture)
+]: false,
+[Symbol(kNeedDrain)
+]: false,
+[Symbol(corked)
+]: 0,
+[Symbol(kOutHeaders)
+]: [Object: null prototype
+] {
+      accept: [Array
+],
+      'user-agent': [Array
+],
+      host: [Array
+]
+}
+},
+  data: `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="NTS Radio"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-site-verification" content="KRa2WWcmg0gMxT-xzixUWXIhxQoAIXVVL1Jdni6M6os"><link rel="preload" href="/css/fonts/Univers-Condensed/UniversCom-57Condensed.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="/css/fonts/UniversLTPro-BoldCond.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preconnect" crossorigin href="https://firebaseinstallations.googleapis.com"><link rel="preconnect" crossorigin href="https://www.google-analytics.com"><link rel="stylesheet" href="/css/style.min.762656f3ae46911d.css"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=47rE43RRzB"><link rel="icon" type="image/png" href="/favicon-32x32.png?v=47rE43RRzB" sizes="32x32"><link rel="icon" type="image/png" href="/favicon-16x16.png?v=47rE43RRzB" sizes="16x16"><link rel="manifest" href="/manifest.json?v=47rE43RRzB"><link rel="mask-icon" href="/safari-pinned-tab.svg?v=47rE43RRzB" color="#000000"><link rel="shortcut icon" href="/favicon.ico?v=47rE43RRzB"><meta name="theme-color" content="#000000"><script type="text/javascript">window.nts_env = {
+"GA_PROPERTY_ID": "UA-6061419-3",
+"GA_MEASUREMENT_ID": "G-WZ3JMJQ60H",
+"GA_MEASUREMENT_ID_MOBILE": "G-NHTR5X7F3C",
+"IOS_APP_ID": "1204567739",
+"OPTIMIZE_ID": "GTM-ND8PTFZ",
+"STRIPE_PUBLISHABLE_KEY": "pk_live_gjV0iVK3tVFDcVv5vhP38ltu00zh0PcuAm"
+};</script>  <title>Mr Beatnick 5th October 2021 | Listen on NTS</title><meta name="description" content="Playing Detroit House, House, Leftfield House. Mr Beatnick from Don't Be Afraid presents a heady 2 hours of sophisticated disco, dusty house, spiritual jazz and upfront exclusives, with special guests on rotation."><meta name="twitter:card" content="summary_large_image" ><meta name="twitter:site" content="@NTSlive" ><meta name="twitter:image" content="https://media2.ntslive.co.uk/resize/1600x1600/74e3b78b-8da4-49c3-b4e6-d1e665d1f57e_1457481600.jpeg" ><meta property="og:description" content="Playing Detroit House, House, Leftfield House. Mr Beatnick from Don't Be Afraid presents a heady 2 hours of sophisticated disco, dusty house, spiritual jazz and upfront exclusives, with special guests on rotation."><meta property="og:site_name" content="NTS Radio" ><meta property="og:title" content="Mr Beatnick  5th October 2021"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nts.live/shows/mrbeatnick/episodes/mr-beatnick-5th-october-2021"><meta property="og:image" content="https://media2.ntslive.co.uk/resize/1600x1600/74e3b78b-8da4-49c3-b4e6-d1e665d1f57e_1457481600.jpeg"><meta name="apple-itunes-app" content="app-id=1204567739, app-argument=https://www.nts.live/shows/mrbeatnick/episodes/mr-beatnick-5th-october-2021"><link rel="canonical" href="https://www.nts.live/shows/mrbeatnick/episodes/mr-beatnick-5th-october-2021"> </head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-6061419-3"></script><script>window.dataLayer = window.dataLayer || [];\n` +
+    '    function gtag(){dataLayer.push(arguments);
+}\n' +
+    "    gtag('js', new Date());\n" +
+    '\n' +
+    "    gtag('config', window.nts_env.GA_PROPERTY_ID, {\n" +
+    "        'optimize_id': window.nts_env.OPTIMIZE_ID,\n" +
+    "        'anonymize_ip': true,\n" +
+    "        'custom_map': {\n" +
+    "            'dimension1': 'is_authenticated',\n" +
+    "            'dimension2': 'has_subscription',\n" +
+    '
+},\n' +
+    '
+});\n' +
+    "    gtag('config', window.nts_env.GA_MEASUREMENT_ID, {\n" +
+    "      'anonymize_ip': true,\n" +
+    '
+});</script><body><div id="ajax-container">    </div><div id="react-root"><div id="react-content" class=""><div class="snackbar snackbar--fade "></div><span class="hidden"><audio id="nts-player-audio" controls="" preload="none"><source type="audio/mpeg"/></audio></span><div id="mixcloud-player" class="  "><div class="mixcloud-player__container"><div class="mixcloud-player__button-group"><div class="mixcloud-player__button-group-container"><a class="mixcloud-player__text-link mixcloud-player__text-link--tracklist nts-button nts-app" data-track="event" data-category="Navigation" data-target="GoTo-Episode" data-origin="from-mixcloudPlayerLink"><span>TRACKLIST</span></a><button id="mixcloud-player-close" class="mixcloud-player__close nts-button" name="mixcloud-player-close"><span class="icon icon-close-cross"></span></button></div></div><div style="min-width:0;position:relative;width:100%"><div class="iframe-container visuallyhidden"></div><div class="visuallyhidden"></div></div></div></div><div class="footer-player mixtape-player "><div class="footer-player__img-container"></div><div class="footer-player__control-btn"><button class="footer-player__control-btn__icon-container nts-link"><svg class="nts-icon nts-icon--inverted" style="width:30px;height:30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><title>Play</title><g id="_x33_--Hidden-_x28_closing-up_x29_-" transform="translate(-772 -385)"><g id="Drawer" transform="translate(0 43)"><g id="_x32_" transform="translate(18)"><path id="play" d="M1260.4 651.3L882.8 861.2c-4.4 2.4-8.2 2.7-11.2 1-3.1-1.7-4.6-5.1-4.6-10.2V433.2c0-4.8 1.5-8.2 4.6-10.2 3.1-2 6.8-1.7 11.2 1l377.6 210c4.4 2.4 6.6 5.3 6.6 8.7 0 3.3-2.2 6.2-6.6 8.6z"></path></g></g></g></svg></button></div><div class="footer-player__info"></div><button class="footer-player__live-tracks-trigger nts-link no-padding"><svg class="nts-icon nts-icon--inline-alt" style="width:24px;height:24px;fill:white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.87 14.49h8V13h-8zm12-5h-12V11h12zm0-3.5h-12v1.5h12zm6.26 3.34l-2.88-1v7a2.67 2.67 0 01-2 2.61 2.53 2.53 0 01-2.88-1.44 2.73 2.73 0 01.71-3.24 2.49 2.49 0 013.2 0V6l3.84 1.33z"></path></svg></button><div class="footer-player__right-btn-container"><button class="footer-player__right-btn nts-link no-padding"><svg class="nts-icon nts-icon--s nts-icon--inverted" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg></button></div></div><div><div class="navigation-page-overlay "></div><header class="header"><a class="header__home nts-app nts-link" href="/" data-track="event" data-category="Navigation" data-target="GoTo-Home" data-origin="from: header" aria-label="Home"><svg style="fill:#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.7 6.9L22.3 9h-1.5l.5-2c.1-.6.1-1.1-.6-1.1s-1 .5-1.1 1.1l-.4 1.7c-.1.5-.1 1 0 1.5l1.4 4.1c.2.6.3 1.3.1 2l-.6 2.6c-.4 1.5-1.5 2.4-2.9 2.4-1.6 0-2.3-.7-1.9-2.4l.5-2.2h1.5l-.5 2.1c-.2.8 0 1.2.7 1.2.6 0 1-.5 1.2-1.2l.5-2.3c.1-.5.1-1.1-.1-1.6l-1.3-3.8c-.2-.7-.3-1.2-.2-2.1l.4-2c.4-1.6 1.4-2.4 2.9-2.4 1.7 0 2.2.8 1.8 2.3zM11.2 21.1L14.6 6H13l.3-1.3h4.8L17.8 6h-1.7l-3.4 15.1h-1.5zm-4.5 0L8.1 6.6 4.8 21.1H3.5L7.2 4.8h2.2L8 18.7l3.2-14h1.3L8.8 21.1H6.7zM0 26h26V0H0v26z"></path></svg></a><nav class="header__nav text-uppercase hidden-phone"><a class="header-nav-item nts-app nts-link " href="/radio">Radio</a><a class="header-nav-item nts-app nts-link " href="/latest">Latest</a><a class="header-nav-item nts-app nts-link " href="/explore">Explore</a><a class="header-nav-item nts-app nts-link " href="/infinite-mixtapes">Infinite Mixtapes</a><a class="header-nav-cta nts-app nts-button nts-link hidden" href="/supporters">NTS Supporters</a></nav><div class="header__search-form"><form class="search-form" method="get"><button class="search-form__button" aria-label="Search" type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M413.38 392.4a169.89 169.89 0 0 0 18.19-27.4c43-83 10.73-185.28-72.09-228.39a168.63 168.63 0 0 0-227.82 72.27c-43 83-10.74 185.28 72.09 228.39a168.49 168.49 0 0 0 183.35-18L461.62 494l26.56-26.62zm-194.25 15.16C152.67 373 126.77 290.9 161.28 224.28a135.43 135.43 0 0 1 182.82-58c66.46 34.6 92.36 116.66 57.85 183.28a135.43 135.43 0 0 1-182.82 58z"></path></svg></button><input type="text" class="search-form__input nts-input search-btn" name="q" autoComplete="off" value="" aria-label="Search"/></form></div><a class="header-nav-item header-nav-item--alt nts-link text-uppercase hidden-phone" href="https://shop.nts.live/" target="_blank" rel="noopener noreferrer">Shop</a><button class="header-nav-item nts-link hidden-phone" data-track="event" data-category="Navigation" data-target="Open-Chat" data-origin="from: header" aria-label="Open chat"><svg style="height:20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M493 391.73h-45.9v99.35l-128.18-99.35H118V144.92h375z"></path></svg></button><a class="header-nav-item header-nav-item--alt nts-app nts-link hidden-phone " href="/my-nts/favourites/shows" aria-label="My NTS"><svg class="nts-icon--inline nts-icon--inline--xxl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.41a2.92 2.92 0 11-2.95 2.92A2.91 2.91 0 0112 4.41m0-1.58a4.5 4.5 0 104.5 4.5 4.5 4.5 0 00-4.5-4.5zm0 11.71c3.26 0 7.41 1.63 7.41 2.91v1.79H4.55v-1.79c0-1.28 4.16-2.91 7.41-2.91M12 13c-3 0-9 1.51-9 4.5v3.38h18v-3.43c0-3-6-4.5-9-4.5z" data-name="Layer 5"></path></svg><span class="text-uppercase visible-desktop">My NTS</span></a><button class="header__menu-toggle  nts-link" aria-label="Toggle navigation menu"><svg class="header__menu-toggle__icon header__menu-toggle__icon--cross" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg><svg class="header__menu-toggle__icon header__menu-toggle__icon--ellipsis" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M150.39 340a37.5 37.5 0 1 1 37.5-37.5 37.5 37.5 0 0 1-37.5 37.5zm150 0a37.5 37.5 0 1 1 37.5-37.5 37.5 37.5 0 0 1-37.5 37.5zm150 0a37.5 37.5 0 1 '... 44868 more characters
+}
+
+ No html element found called react-state 
+
+URL scraped into db: https: //www.nts.live/shows/mrbeatnick/episodes/mr-beatnick-5th-october-2021
+{
+  status: 200,
+  statusText: 'OK',
+  headers: {
+    'content-type': 'text/html; charset=utf-8',
+    'content-length': '61346',
+    connection: 'close',
+    'access-control-allow-origin': '*, *',
+    'cache-control': 'public, max-age=21600',
+    'content-security-policy': "default-src 'self' *.nts.live *.ntslive.co.uk; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://*.soundcloud.com *.mixcloud.com https://www.google-analytics.com https://ssl.google-analytics.com https://www.googletagmanager.com https://optimize.google.com certify-js.alexametrics.com https://www.youtube.com *.ytimg.com *.list-manage.com https://unpkg.com *.gstatic.com apis.google.com https://js.stripe.com https://www.paypal.com; connect-src *; img-src 'self' data: https:; media-src 'self' https://*.ntslive.net http://*.ntslive.net https://*.ntslive.co.uk https://*.sndcdn.com; style-src 'unsafe-inline' 'self' hello.myfonts.net https://optimize.google.com https://fonts.googleapis.com; worker-src 'self'; child-src 'self' *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com; font-src 'self' data: fonts.gstatic.com; frame-src *.mixcloud.com https://*.vimeo.com https://*.soundcloud.com https://bandcamp.com https://*.youtube.com https://optimize.google.com *.firebaseapp.com https://js.stripe.com *.paypal.com;",
+    date: 'Wed,
+27 Oct 2021 10: 41: 59 GMT',
+    etag: 'W/"efa2-m2uaphunEZTY6tpy/577EG149dM"',
+    expires: 'Wed,
+27 Oct 2021 16: 41: 59 GMT',
+    server: 'nginx/1.17.10',
+    'strict-transport-security': 'max-age=15552000; includeSubDomains',
+    'x-content-type-options': 'nosniff',
+    'x-dns-prefetch-control': 'off',
+    'x-download-options': 'noopen',
+    'x-frame-options': 'SAMEORIGIN',
+    'x-xss-protection': '1; mode=block',
+    vary: 'Accept-Encoding,Accept',
+    'x-cache': 'Hit from cloudfront',
+    via: '1.1 9fce949f3749407c8e6a75087e168b47.cloudfront.net (CloudFront)',
+    'x-amz-cf-pop': 'AMS50-C1',
+    'x-amz-cf-id': '6_6GXJp_J4Y4Y5wQ6C3VGj4XNZF9x1Gn4ojFhdlS-dON0G-UI9CInA==',
+    age: '3380'
+},
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+},
+    adapter: [Function: httpAdapter
+],
+    transformRequest: [
+[Function: transformRequest
+]
+],
+    transformResponse: [
+[Function: transformResponse
+]
+],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus
+],
+    headers: {
+      Accept: 'application/json, text/plain, * /*',
+      'User-Agent': 'axios/0.23.0'
+    },
+    method: 'get',
+    url: 'https://www.nts.live/shows/john-gomez/episodes/the-spaces-in-between-w-john-gomez-10th-march-2021',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: false,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'www.nts.live',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 10,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'www.nts.live',
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular *1],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: 76,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object],
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: 'GET /shows/john-gomez/episodes/the-spaces-in-between-w-john-gomez-10th-march-2021 HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'User-Agent: axios/0.23.0\r\n' +
+      'Host: www.nts.live\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop
+],
+    agent: Agent {
+      _events: [Object: null prototype
+],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype
+],
+      requests: [Object: null prototype
+] {},
+      sockets: [Object: null prototype
+],
+      freeSockets: [Object: null prototype
+] {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 67,
+      maxCachedSessions: 100,
+      _sessionCache: [Object
+],
+[Symbol(kCapture)
+]: false
+},
+    socketPath: undefined,
+    method: 'GET',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    path: '/shows/john-gomez/episodes/the-spaces-in-between-w-john-gomez-10th-march-2021',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState
+],
+      _events: [Object: null prototype
+],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      socket: [TLSSocket
+],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array
+],
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 200,
+      statusMessage: 'OK',
+      client: [TLSSocket
+],
+      _consuming: true,
+      _dumped: false,
+      req: [Circular *1
+],
+      responseUrl: 'https: //www.nts.live/shows/john-gomez/episodes/the-spaces-in-between-w-john-gomez-10th-march-2021',
+      redirects: [],
+[Symbol(kCapture)
+]: false,
+[Symbol(kHeaders)
+]: [Object
+],
+[Symbol(kHeadersCount)
+]: 46,
+[Symbol(kTrailers)
+]: null,
+[Symbol(kTrailersCount)
+]: 0,
+[Symbol(RequestTimeout)
+]: undefined
+},
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'www.nts.live',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState
+],
+      _events: [Object: null prototype
+],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _options: [Object
+],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)
+],
+      _currentRequest: [Circular *1
+],
+      _currentUrl: 'https: //www.nts.live/shows/john-gomez/episodes/the-spaces-in-between-w-john-gomez-10th-march-2021',
+[Symbol(kCapture)
+]: false
+},
+[Symbol(kCapture)
+]: false,
+[Symbol(kNeedDrain)
+]: false,
+[Symbol(corked)
+]: 0,
+[Symbol(kOutHeaders)
+]: [Object: null prototype
+] {
+      accept: [Array
+],
+      'user-agent': [Array
+],
+      host: [Array
+]
+}
+},
+  data: '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="NTS Radio"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-site-verification" content="KRa2WWcmg0gMxT-xzixUWXIhxQoAIXVVL1Jdni6M6os"><link rel="preload" href="/css/fonts/Univers-Condensed/UniversCom-57Condensed.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="/css/fonts/UniversLTPro-BoldCond.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preconnect" crossorigin href="https://firebaseinstallations.googleapis.com"><link rel="preconnect" crossorigin href="https://www.google-analytics.com"><link rel="stylesheet" href="/css/style.min.762656f3ae46911d.css"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=47rE43RRzB"><link rel="icon" type="image/png" href="/favicon-32x32.png?v=47rE43RRzB" sizes="32x32"><link rel="icon" type="image/png" href="/favicon-16x16.png?v=47rE43RRzB" sizes="16x16"><link rel="manifest" href="/manifest.json?v=47rE43RRzB"><link rel="mask-icon" href="/safari-pinned-tab.svg?v=47rE43RRzB" color="#000000"><link rel="shortcut icon" href="/favicon.ico?v=47rE43RRzB"><meta name="theme-color" content="#000000"><script type="text/javascript">window.nts_env = {
+"GA_PROPERTY_ID": "UA-6061419-3",
+"GA_MEASUREMENT_ID": "G-WZ3JMJQ60H",
+"GA_MEASUREMENT_ID_MOBILE": "G-NHTR5X7F3C",
+"IOS_APP_ID": "1204567739",
+"OPTIMIZE_ID": "GTM-ND8PTFZ",
+"STRIPE_PUBLISHABLE_KEY": "pk_live_gjV0iVK3tVFDcVv5vhP38ltu00zh0PcuAm"
+};</script>  <title>The Spaces In Between w/ John Gómez 10th March 2021 | Listen on NTS</title><meta name="description" content="Playing Funk, Soul, Boogie, Jazz Fusion. London DJ & record collector John Gómez finds the spaces in between - finding music from across the globe that emerges from the liminal zones between different places, times, and styles."><meta name="twitter:card" content="summary_large_image" ><meta name="twitter:site" content="@NTSlive" ><meta name="twitter:image" content="https://media2.ntslive.co.uk/resize/1600x1600/8888be26-4fdb-4c9d-8dc9-2c7392f95436_1588723200.jpeg" ><meta property="og:description" content="Playing Funk, Soul, Boogie, Jazz Fusion. London DJ & record collector John Gómez finds the spaces in between - finding music from across the globe that emerges from the liminal zones between different places, times, and styles."><meta property="og:site_name" content="NTS Radio" ><meta property="og:title" content="The Spaces In Between w/ John Gómez  10th March 2021"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nts.live/shows/john-gomez/episodes/the-spaces-in-between-w-john-gomez-10th-march-2021"><meta property="og:image" content="https://media2.ntslive.co.uk/resize/1600x1600/8888be26-4fdb-4c9d-8dc9-2c7392f95436_1588723200.jpeg"><meta name="apple-itunes-app" content="app-id=1204567739, app-argument=https://www.nts.live/shows/john-gomez/episodes/the-spaces-in-between-w-john-gomez-10th-march-2021"><link rel="canonical" href="https://www.nts.live/shows/john-gomez/episodes/the-spaces-in-between-w-john-gomez-10th-march-2021"> </head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-6061419-3"></script><script>window.dataLayer = window.dataLayer || [];\n' +
+    '    function gtag(){dataLayer.push(arguments);
+}\n' +
+    "    gtag('js', new Date());\n" +
+    '\n' +
+    "    gtag('config', window.nts_env.GA_PROPERTY_ID, {\n" +
+    "        'optimize_id': window.nts_env.OPTIMIZE_ID,\n" +
+    "        'anonymize_ip': true,\n" +
+    "        'custom_map': {\n" +
+    "            'dimension1': 'is_authenticated',\n" +
+    "            'dimension2': 'has_subscription',\n" +
+    '
+},\n' +
+    '
+});\n' +
+    "    gtag('config', window.nts_env.GA_MEASUREMENT_ID, {\n" +
+    "      'anonymize_ip': true,\n" +
+    '
+});</script><body><div id="ajax-container">    </div><div id="react-root"><div id="react-content" class=""><div class="snackbar snackbar--fade "></div><span class="hidden"><audio id="nts-player-audio" controls="" preload="none"><source type="audio/mpeg"/></audio></span><div id="mixcloud-player" class="  "><div class="mixcloud-player__container"><div class="mixcloud-player__button-group"><div class="mixcloud-player__button-group-container"><a class="mixcloud-player__text-link mixcloud-player__text-link--tracklist nts-button nts-app" data-track="event" data-category="Navigation" data-target="GoTo-Episode" data-origin="from-mixcloudPlayerLink"><span>TRACKLIST</span></a><button id="mixcloud-player-close" class="mixcloud-player__close nts-button" name="mixcloud-player-close"><span class="icon icon-close-cross"></span></button></div></div><div style="min-width:0;position:relative;width:100%"><div class="iframe-container visuallyhidden"></div><div class="visuallyhidden"></div></div></div></div><div class="footer-player mixtape-player "><div class="footer-player__img-container"></div><div class="footer-player__control-btn"><button class="footer-player__control-btn__icon-container nts-link"><svg class="nts-icon nts-icon--inverted" style="width:30px;height:30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><title>Play</title><g id="_x33_--Hidden-_x28_closing-up_x29_-" transform="translate(-772 -385)"><g id="Drawer" transform="translate(0 43)"><g id="_x32_" transform="translate(18)"><path id="play" d="M1260.4 651.3L882.8 861.2c-4.4 2.4-8.2 2.7-11.2 1-3.1-1.7-4.6-5.1-4.6-10.2V433.2c0-4.8 1.5-8.2 4.6-10.2 3.1-2 6.8-1.7 11.2 1l377.6 210c4.4 2.4 6.6 5.3 6.6 8.7 0 3.3-2.2 6.2-6.6 8.6z"></path></g></g></g></svg></button></div><div class="footer-player__info"></div><button class="footer-player__live-tracks-trigger nts-link no-padding"><svg class="nts-icon nts-icon--inline-alt" style="width:24px;height:24px;fill:white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.87 14.49h8V13h-8zm12-5h-12V11h12zm0-3.5h-12v1.5h12zm6.26 3.34l-2.88-1v7a2.67 2.67 0 01-2 2.61 2.53 2.53 0 01-2.88-1.44 2.73 2.73 0 01.71-3.24 2.49 2.49 0 013.2 0V6l3.84 1.33z"></path></svg></button><div class="footer-player__right-btn-container"><button class="footer-player__right-btn nts-link no-padding"><svg class="nts-icon nts-icon--s nts-icon--inverted" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg></button></div></div><div><div class="navigation-page-overlay "></div><header class="header"><a class="header__home nts-app nts-link" href="/" data-track="event" data-category="Navigation" data-target="GoTo-Home" data-origin="from: header" aria-label="Home"><svg style="fill:#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M22.7 6.9L22.3 9h-1.5l.5-2c.1-.6.1-1.1-.6-1.1s-1 .5-1.1 1.1l-.4 1.7c-.1.5-.1 1 0 1.5l1.4 4.1c.2.6.3 1.3.1 2l-.6 2.6c-.4 1.5-1.5 2.4-2.9 2.4-1.6 0-2.3-.7-1.9-2.4l.5-2.2h1.5l-.5 2.1c-.2.8 0 1.2.7 1.2.6 0 1-.5 1.2-1.2l.5-2.3c.1-.5.1-1.1-.1-1.6l-1.3-3.8c-.2-.7-.3-1.2-.2-2.1l.4-2c.4-1.6 1.4-2.4 2.9-2.4 1.7 0 2.2.8 1.8 2.3zM11.2 21.1L14.6 6H13l.3-1.3h4.8L17.8 6h-1.7l-3.4 15.1h-1.5zm-4.5 0L8.1 6.6 4.8 21.1H3.5L7.2 4.8h2.2L8 18.7l3.2-14h1.3L8.8 21.1H6.7zM0 26h26V0H0v26z"></path></svg></a><nav class="header__nav text-uppercase hidden-phone"><a class="header-nav-item nts-app nts-link " href="/radio">Radio</a><a class="header-nav-item nts-app nts-link " href="/latest">Latest</a><a class="header-nav-item nts-app nts-link " href="/explore">Explore</a><a class="header-nav-item nts-app nts-link " href="/infinite-mixtapes">Infinite Mixtapes</a><a class="header-nav-cta nts-app nts-button nts-link hidden" href="/supporters">NTS Supporters</a></nav><div class="header__search-form"><form class="search-form" method="get"><button class="search-form__button" aria-label="Search" type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M413.38 392.4a169.89 169.89 0 0 0 18.19-27.4c43-83 10.73-185.28-72.09-228.39a168.63 168.63 0 0 0-227.82 72.27c-43 83-10.74 185.28 72.09 228.39a168.49 168.49 0 0 0 183.35-18L461.62 494l26.56-26.62zm-194.25 15.16C152.67 373 126.77 290.9 161.28 224.28a135.43 135.43 0 0 1 182.82-58c66.46 34.6 92.36 116.66 57.85 183.28a135.43 135.43 0 0 1-182.82 58z"></path></svg></button><input type="text" class="search-form__input nts-input search-btn" name="q" autoComplete="off" value="" aria-label="Search"/></form></div><a class="header-nav-item header-nav-item--alt nts-link text-uppercase hidden-phone" href="https://shop.nts.live/" target="_blank" rel="noopener noreferrer">Shop</a><button class="header-nav-item nts-link hidden-phone" data-track="event" data-category="Navigation" data-target="Open-Chat" data-origin="from: header" aria-label="Open chat"><svg style="height:20px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M493 391.73h-45.9v99.35l-128.18-99.35H118V144.92h375z"></path></svg></button><a class="header-nav-item header-nav-item--alt nts-app nts-link hidden-phone " href="/my-nts/favourites/shows" aria-label="My NTS"><svg class="nts-icon--inline nts-icon--inline--xxl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.41a2.92 2.92 0 11-2.95 2.92A2.91 2.91 0 0112 4.41m0-1.58a4.5 4.5 0 104.5 4.5 4.5 4.5 0 00-4.5-4.5zm0 11.71c3.26 0 7.41 1.63 7.41 2.91v1.79H4.55v-1.79c0-1.28 4.16-2.91 7.41-2.91M12 13c-3 0-9 1.51-9 4.5v3.38h18v-3.43c0-3-6-4.5-9-4.5z" data-name="Layer 5"></path></svg><span class="text-uppercase visible-desktop">My NTS</span></a><button class="header__menu-toggle  nts-link" aria-label="Toggle navigation menu"><svg class="header__menu-toggle__icon header__menu-toggle__icon--cross" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M356.25 300L487.5 431.25l-56.25 56.25L300 356.25 168.75 487.5l-56.25-56.25L243.75 300 112.5 168.75l56.25-56.25L300 243.75 431.25 112.5l56.25 56.25z"></path></svg><svg class="header__menu-toggle__icon header__menu-toggle__icon--ellipsis" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><path d="M150'... 51290 more characters
+}
+
+ No html element found called react-state 
+
+URL scraped into db: https: //www.nts.live/shows/john-gomez/episodes/the-spaces-in-between-w-john-gomez-10th-march-2021
