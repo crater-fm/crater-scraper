@@ -9,7 +9,7 @@ dotenv.config();
 const pgquery = require('./pgqueries.js');
 
 module.exports = {
-    // Async function to scrape html from url
+    // Async function to scrape data from NTS.live website
     scrapeNTS: async function (url) {
         async function scrapeHtmlData(url) {
             try {
@@ -94,13 +94,13 @@ module.exports = {
 
                 // Check if episode-genre relation already exists
                 var getEpisodeGenreResult = await pgquery.getEpisodeGenre(currentEpisodeId, currentGenreId, pool)
-                
+
                 if (getEpisodeGenreResult.rows.length > 0) {
                     // skip duplicate
                 } else { // add new entry to link episode to genre
                     var addEpisodeGenreResult = await pgquery.addEpisodeGenre(currentEpisodeId, currentGenreId, pool)
                 }
-                  
+
             }
 
             // Loop through all tracks in the episode and add to database
@@ -157,7 +157,7 @@ module.exports = {
 
             await pool.end();
         }
-        
+
         catch (error) {
             console.log(error)
         }
@@ -166,6 +166,3 @@ module.exports = {
     }
 }
 
-module.exports = {
-    scrapeNTS: scrapeNTS
-}
