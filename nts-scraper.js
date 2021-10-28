@@ -10,7 +10,7 @@ const pgquery = require('./pgqueries.js');
 
 module.exports = {
     // Async function to scrape data from NTS.live website
-    scrapeNTS: async function (url, pool) {
+    scrapeNTS: async function (url, djName, pool) {
         async function scrapeHtmlData(url) {
             try {
                 // Fetch HTML from URL
@@ -69,6 +69,28 @@ module.exports = {
             var currentEpisodeId = await pgquery.getEpisode(url, pool)
             var currentEpisodeId = currentEpisodeId.rows[0].episode_id
 
+            // Check if the DJ for this episode already exists in db
+            var getDjResult = await pgquery.getDj(djName, pool)
+            if (getDjResult.rows.length > 0) {
+                // skip duplicate
+            } else { // Add if new
+                var addDjResult = await pgquery.addDj(djName, pool)
+                var getDjResult = await pgquery.getDj(djName, pool)
+            }
+            var currentDjId = getDjResult.rows[0].dj_id
+
+            // Check if the entry for this Episode-DJ relationship already exists in db
+            var getEpisodeDjResult = await pgquery.getEpisodeDj(currentEpisodeId, currentDjId, pool)
+            if (getEpisodeDjResult.rows.length > 0) {
+                // skip duplicate
+            } else { // Add if new
+                var addEpisodeDjResult = await pgquery.addEpisodeDj(currentEpisodeId, currentDjId, pool)
+                var getEpisodeDjResult = await pgquery.getEpisodeDj(currentEpisodeId, currentDjId, pool)
+            }
+            var currentEpisodeDjId = getEpisodeDjResult.rows[0].episode_dj_id
+
+
+
             // Loop through all genres in the episode and add to database
             for (const genre of episode.genres) {
                 var getGenreResult = await pgquery.getGenre(genre.value, pool)
@@ -78,6 +100,7 @@ module.exports = {
                     var addGenreResult = await pgquery.addGenre(genre.value, genre.id, pool)
                 }
                 // Find the id of the current genre
+                // TODO: remove all these duplicate calls to getXX functions, because the added ID can be parsed from the return to the addXX functions
                 var currentGenreId = await pgquery.getGenre(genre.value, pool)
                 var currentGenreId = currentGenreId.rows[0].genre_id
 

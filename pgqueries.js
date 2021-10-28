@@ -132,6 +132,42 @@ async function addSetlist(songArtistId, episodeId, setlistIndex, pool) {
     return await pool.query(text, values);
 }
 
+async function getDj(djName, pool) {
+    const text = `
+        SELECT dj_id
+        FROM dj
+        WHERE dj_name = $1`;
+    const values = [djName];
+    return await pool.query(text, values);
+}
+
+async function addDj(djName, pool) {
+    const text = `
+    INSERT INTO dj (dj_name)
+    VALUES ($1)
+    RETURNING dj_id`;
+    const values = [djName];
+    return await pool.query(text, values);
+}
+
+async function getEpisodeDj(episodeId, djId, pool) {
+    const text = `
+    SELECT episode_dj_id
+    FROM episode_dj
+    WHERE episode_id = $1 AND dj_id = $2`;
+    const values = [episodeId, djId];
+    return await pool.query(text, values);
+}
+
+async function addEpisodeDj(episodeId, djId, pool) {
+    const text = `
+    INSERT INTO episode_dj (episode_id, dj_id)
+    VALUES ($1, $2)
+    `;
+    const values = [episodeId, djId];
+    return await pool.query(text, values);
+}
+
 module.exports = {
     getEpisode: getEpisode,
     addEpisode: addEpisode,
@@ -146,5 +182,9 @@ module.exports = {
     getSongArtist: getSongArtist,
     addSongArtist: addSongArtist,
     getSetlist: getSetlist,
-    addSetlist: addSetlist
+    addSetlist: addSetlist,
+    getDj: getDj,
+    addDj: addDj,
+    getEpisodeDj: getEpisodeDj,
+    addEpisodeDj: addEpisodeDj
 }

@@ -9,7 +9,13 @@ dotenv.config();
 let urls = fs.readFileSync(process.env.URL_LIST, 'utf8')
 let urlArray = urls.split("\n")
 
-async function runScraper(urlArray) {
+var nestedArray = [];
+for (const [index, item] of urlArray.entries()) {
+    var djPlusUrl = item.split(',')
+    nestedArray.push(djPlusUrl)
+}
+
+async function runScraper(nestedArray) {
     // Connect to PostgreSQL
     const pool = new Pool({
         user: process.env.DB_USER,
@@ -20,13 +26,20 @@ async function runScraper(urlArray) {
     });
 
     // Loop through array of URLs and run scrapeNTS
-    console.log(urlArray.length, ' URLs to be scraped')
+    console.log(nestedArray.length, ' URLs to be scraped')
     
-    for (const item of urlArray) {
-        try {
-            var result = await scraper.scrapeNTS(item, pool)
+    let counter  = 0;
 
-            console.log(`URL scraped into db: ${item}`)
+    for (const item of nestedArray) {
+        const djName = item[0];
+        const url = item[1];
+
+        try {
+            var result = await scraper.scrapeNTS(url, djName, pool)
+
+            console.log(`URL with index ${counter} scraped into db: ${url}`)
+            counter++
+/*
             // Wait before scraping the next URL to avoid getting IP flagged
             function sleep(milliseconds) {
                 const date = Date.now();
@@ -36,6 +49,8 @@ async function runScraper(urlArray) {
                 } while (currentDate - date < milliseconds);
             }
             sleep(process.env.WAIT_TIME_MS);
+*/
+
         }
         catch (err) {
             console.log(err)
@@ -47,4 +62,4 @@ async function runScraper(urlArray) {
     await pool.end();
 }
 
-runScraper(urlArray)
+runScraper(nestedArray)
