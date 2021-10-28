@@ -10,7 +10,7 @@ const pgquery = require('./pgqueries.js');
 
 module.exports = {
     // Async function to scrape data from NTS.live website
-    scrapeNTS: async function (url) {
+    scrapeNTS: async function (url, pool) {
         async function scrapeHtmlData(url) {
             try {
                 // Fetch HTML from URL
@@ -55,19 +55,6 @@ module.exports = {
 
         // RUN FUNCTIONS SECTION
         try {
-            // Connect to PostgreSQL
-            const pool = new Pool({
-                user: process.env.DB_USER,
-                host: process.env.DB_HOST,
-                database: process.env.DB_NAME,
-                password: process.env.DB_PASSWORD,
-                port: process.env.DB_PORT,
-            });
-
-            await pool.query('SELECT NOW()', (err, res) => {
-                console.log(err, res)
-            })
-
             const reactStateData = await scrapeHtmlData(url)
             const episode = reactStateData.episode
 
@@ -158,8 +145,6 @@ module.exports = {
 
 
             }
-
-            await pool.end();
         }
 
         catch (error) {
