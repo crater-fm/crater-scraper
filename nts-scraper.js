@@ -64,6 +64,10 @@ module.exports = {
                 port: process.env.DB_PORT,
             });
 
+            await pool.query('SELECT NOW()', (err, res) => {
+                console.log(err, res)
+            })
+
             const reactStateData = await scrapeHtmlData(url)
             const episode = reactStateData.episode
 
