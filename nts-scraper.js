@@ -104,9 +104,11 @@ module.exports = {
                 var currentGenreId = await pgquery.getGenre(genre.value, pool)
                 var currentGenreId = currentGenreId.rows[0].genre_id
 
-                // There is a bug with getEpisodeGenre!!!
 
-                // Check if episode-genre relation already exists
+                // Check if episode-genre relation already exists, and add if not, returning episode_genre_id, episode_id, genre_id
+               var addUniqueEpGenreResult = await pgquery.addUniqueEpGenre(currentEpisodeId, currentGenreId, pool)
+
+                /* TODO: Remove this block. OBE now. Replace the others similar way.
                 var getEpisodeGenreResult = await pgquery.getEpisodeGenre(currentEpisodeId, currentGenreId, pool)
 
                 if (getEpisodeGenreResult.rows.length > 0) {
@@ -114,7 +116,7 @@ module.exports = {
                 } else { // add new entry to link episode to genre
                     var addEpisodeGenreResult = await pgquery.addEpisodeGenre(currentEpisodeId, currentGenreId, pool)
                 }
-
+                */
             }
 
             // Loop through all tracks in the episode and add to database

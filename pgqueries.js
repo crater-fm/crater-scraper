@@ -22,6 +22,7 @@ async function addEpisode(episodeName, episodeDescription, episodeDate, episodeU
     return await pool.query(text, values);
 }
 
+
 // Functions to get/add songs
 async function getSong(songName, pool) {
     const text = `
@@ -86,7 +87,6 @@ async function getEpisodeGenre(episodeId, genreId, pool) {
     return await pool.query(text, values);
 }
 
-
 async function addEpisodeGenre(episodeId, genreId, pool) {
     const text = `
         INSERT INTO episode_genre (episode_id, genre_id)
@@ -95,6 +95,31 @@ async function addEpisodeGenre(episodeId, genreId, pool) {
     const values = [episodeId, genreId];
     return await pool.query(text, values);
 }
+
+// Check if element exists, INSERT if not, and return either the ID of existing element or inserted element
+async function addUniqueEpGenre(episodeId, genreId, pool) {
+    const text = `
+        WITH s AS (
+                SELECT episode_genre_id, episode_id, genre_id
+                FROM episode_genre
+                WHERE episode_id = $1 AND genre_id = $2),
+            i AS (
+                INSERT INTO episode_genre (episode_id, genre_id)
+                    SELECT $1, $2
+                    WHERE NOT EXISTS (SELECT 1 FROM s)
+                    RETURNING episode_genre_id, episode_id, genre_id
+            )
+        SELECT episode_genre_id, episode_id, genre_id
+        FROM i
+        UNION ALL
+        SELECT episode_genre_id, episode_id, genre_id
+        FROM s;
+`;
+    const values = [episodeId, genreId];
+    return await pool.query(text, values);;
+}
+
+
 
 // Functions to get/add song_artist relations
 async function getSongArtist(songId, artistId, pool) {
@@ -179,6 +204,7 @@ module.exports = {
     addGenre: addGenre,
     getEpisodeGenre: getEpisodeGenre,
     addEpisodeGenre: addEpisodeGenre,
+    addUniqueEpGenre: addUniqueEpGenre,
     getSongArtist: getSongArtist,
     addSongArtist: addSongArtist,
     getSetlist: getSetlist,
