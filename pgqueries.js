@@ -23,12 +23,13 @@ async function addEpisode(episodeName, episodeDescription, episodeDate, episodeU
     const values = [episodeName, episodeDescription, episodeDate, episodeURL];
     return await pool.query(text, values);
 }
+
 async function addUniqueEpisode(episodeName, episodeDescription, episodeDate, episodeUrl, episodePlatform, pool) {
     const text = `
         WITH s AS (
                 SELECT episode_id, episode_name, episode_description, episode_date, episode_url, episode_platform
                 FROM episode
-                WHERE episode_url = $4),
+                WHERE episode_name = $1 AND episode_description = $2 AND episode_date = $3 AND episode_url = $4 AND episode_platform = $5),
             i AS (
                 INSERT INTO episode (episode_name, episode_description, episode_date, episode_url, episode_platform)
                     SELECT $1, $2, $3, $4, $5
@@ -40,9 +41,21 @@ async function addUniqueEpisode(episodeName, episodeDescription, episodeDate, ep
         SELECT episode_id, episode_name, episode_description, episode_date, episode_url, episode_platform
         FROM s;`;
     const values = [episodeName, episodeDescription, episodeDate, episodeUrl, episodePlatform];
-    return await pool.query(text, values);;
+    return await pool.query(text, values);
 }
 
+async function upsertEpisode(episodeName, episodeDescription, episodeDate, episodeUrl, episodePlatform, pool) {
+    const text = `
+INSERT INTO episode (episode_name, episode_description, episode_date, episode_url, episode_platform)
+VALUES ($1, $2, $3, $4, $5)
+ON CONFLICT (episode_url)
+DO
+    UPDATE SET episode_name = $1, episode_description = $2, episode_date = $3, episode_platform = $5
+RETURNING episode_id, episode_name, episode_description, episode_date, episode_url, episode_platform;
+`;
+    const values = [episodeName, episodeDescription, episodeDate, episodeUrl, episodePlatform];
+    return await pool.query(text, values);
+}
 
 
 // Functions to get/add songs
@@ -258,8 +271,6 @@ async function addSetlist(songArtistId, episodeId, setlistIndex, pool) {
     const values = [songArtistId, episodeId, setlistIndex];
     return await pool.query(text, values);
 }
-
-
 async function addUniqueSetlist(songArtistId, episodeId, setlistIndex, pool) {
     const text = `
         WITH s AS (
@@ -359,22 +370,13 @@ async function addUniqueEpDj(episodeId, djId, pool) {
 
 
 module.exports = {
-    getEpisode: getEpisode,
-    addUniqueEpisode: addUniqueEpisode,
-    getSong: getSong,
+    upsertEpisode: upsertEpisode,
     addUniqueSong: addUniqueSong,
-    getArtist: getArtist,
     addUniqueArtist: addUniqueArtist,
-    getGenre: getGenre,
     addUniqueGenre: addUniqueGenre,
-    getEpisodeGenre: getEpisodeGenre,
     addUniqueEpGenre: addUniqueEpGenre,
-    getSongArtist: getSongArtist,
     addUniqueSongArtist: addUniqueSongArtist,
-    getSetlist: getSetlist,
     addUniqueSetlist: addUniqueSetlist,
-    getDj: getDj,
     addUniqueDj: addUniqueDj,
-    getEpisodeDj: getEpisodeDj,
     addUniqueEpDj: addUniqueEpDj
 }

@@ -2,10 +2,10 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 13.4
+-- Dumped from database version 12.8
 -- Dumped by pg_dump version 14.0
 
--- Started on 2021-10-28 17:39:57 CEST
+-- Started on 2021-11-02 21:43:50 CET
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -23,7 +23,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- TOC entry 203 (class 1259 OID 16612)
+-- TOC entry 202 (class 1259 OID 17129)
 -- Name: artist; Type: TABLE; Schema: public; Owner: admin
 --
 
@@ -36,7 +36,7 @@ CREATE TABLE public.artist (
 ALTER TABLE public.artist OWNER TO admin;
 
 --
--- TOC entry 202 (class 1259 OID 16610)
+-- TOC entry 203 (class 1259 OID 17137)
 -- Name: artist_artist_id_seq; Type: SEQUENCE; Schema: public; Owner: admin
 --
 
@@ -52,8 +52,8 @@ CREATE SEQUENCE public.artist_artist_id_seq
 ALTER TABLE public.artist_artist_id_seq OWNER TO admin;
 
 --
--- TOC entry 3360 (class 0 OID 0)
--- Dependencies: 202
+-- TOC entry 3946 (class 0 OID 0)
+-- Dependencies: 203
 -- Name: artist_artist_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
 --
 
@@ -61,7 +61,7 @@ ALTER SEQUENCE public.artist_artist_id_seq OWNED BY public.artist.artist_id;
 
 
 --
--- TOC entry 213 (class 1259 OID 16692)
+-- TOC entry 204 (class 1259 OID 17139)
 -- Name: crater_users; Type: TABLE; Schema: public; Owner: admin
 --
 
@@ -77,7 +77,7 @@ CREATE TABLE public.crater_users (
 ALTER TABLE public.crater_users OWNER TO admin;
 
 --
--- TOC entry 212 (class 1259 OID 16690)
+-- TOC entry 205 (class 1259 OID 17147)
 -- Name: crater_users_user_id_seq; Type: SEQUENCE; Schema: public; Owner: admin
 --
 
@@ -93,8 +93,8 @@ CREATE SEQUENCE public.crater_users_user_id_seq
 ALTER TABLE public.crater_users_user_id_seq OWNER TO admin;
 
 --
--- TOC entry 3361 (class 0 OID 0)
--- Dependencies: 212
+-- TOC entry 3947 (class 0 OID 0)
+-- Dependencies: 205
 -- Name: crater_users_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
 --
 
@@ -102,7 +102,7 @@ ALTER SEQUENCE public.crater_users_user_id_seq OWNED BY public.crater_users.user
 
 
 --
--- TOC entry 219 (class 1259 OID 16766)
+-- TOC entry 206 (class 1259 OID 17149)
 -- Name: dj; Type: TABLE; Schema: public; Owner: admin
 --
 
@@ -116,7 +116,7 @@ CREATE TABLE public.dj (
 ALTER TABLE public.dj OWNER TO admin;
 
 --
--- TOC entry 218 (class 1259 OID 16764)
+-- TOC entry 207 (class 1259 OID 17157)
 -- Name: dj_dj_id_seq; Type: SEQUENCE; Schema: public; Owner: admin
 --
 
@@ -132,8 +132,8 @@ CREATE SEQUENCE public.dj_dj_id_seq
 ALTER TABLE public.dj_dj_id_seq OWNER TO admin;
 
 --
--- TOC entry 3362 (class 0 OID 0)
--- Dependencies: 218
+-- TOC entry 3948 (class 0 OID 0)
+-- Dependencies: 207
 -- Name: dj_dj_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
 --
 
@@ -141,7 +141,7 @@ ALTER SEQUENCE public.dj_dj_id_seq OWNED BY public.dj.dj_id;
 
 
 --
--- TOC entry 205 (class 1259 OID 16623)
+-- TOC entry 208 (class 1259 OID 17159)
 -- Name: episode; Type: TABLE; Schema: public; Owner: admin
 --
 
@@ -151,7 +151,7 @@ CREATE TABLE public.episode (
     episode_description text,
     episode_date text,
     episode_url text NOT NULL,
-    episode_platform text,
+    episode_platform text NOT NULL,
     episode_dj_id integer
 );
 
@@ -159,7 +159,7 @@ CREATE TABLE public.episode (
 ALTER TABLE public.episode OWNER TO admin;
 
 --
--- TOC entry 221 (class 1259 OID 16777)
+-- TOC entry 209 (class 1259 OID 17167)
 -- Name: episode_dj; Type: TABLE; Schema: public; Owner: admin
 --
 
@@ -173,7 +173,7 @@ CREATE TABLE public.episode_dj (
 ALTER TABLE public.episode_dj OWNER TO admin;
 
 --
--- TOC entry 220 (class 1259 OID 16775)
+-- TOC entry 210 (class 1259 OID 17172)
 -- Name: episode_dj_episode_dj_id_seq; Type: SEQUENCE; Schema: public; Owner: admin
 --
 
@@ -189,8 +189,8 @@ CREATE SEQUENCE public.episode_dj_episode_dj_id_seq
 ALTER TABLE public.episode_dj_episode_dj_id_seq OWNER TO admin;
 
 --
--- TOC entry 3363 (class 0 OID 0)
--- Dependencies: 220
+-- TOC entry 3949 (class 0 OID 0)
+-- Dependencies: 210
 -- Name: episode_dj_episode_dj_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
 --
 
@@ -198,7 +198,7 @@ ALTER SEQUENCE public.episode_dj_episode_dj_id_seq OWNED BY public.episode_dj.ep
 
 
 --
--- TOC entry 204 (class 1259 OID 16621)
+-- TOC entry 211 (class 1259 OID 17174)
 -- Name: episode_episode_id_seq; Type: SEQUENCE; Schema: public; Owner: admin
 --
 
@@ -214,8 +214,8 @@ CREATE SEQUENCE public.episode_episode_id_seq
 ALTER TABLE public.episode_episode_id_seq OWNER TO admin;
 
 --
--- TOC entry 3364 (class 0 OID 0)
--- Dependencies: 204
+-- TOC entry 3950 (class 0 OID 0)
+-- Dependencies: 211
 -- Name: episode_episode_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
 --
 
@@ -223,7 +223,7 @@ ALTER SEQUENCE public.episode_episode_id_seq OWNED BY public.episode.episode_id;
 
 
 --
--- TOC entry 217 (class 1259 OID 16746)
+-- TOC entry 212 (class 1259 OID 17176)
 -- Name: episode_genre; Type: TABLE; Schema: public; Owner: admin
 --
 
@@ -237,7 +237,7 @@ CREATE TABLE public.episode_genre (
 ALTER TABLE public.episode_genre OWNER TO admin;
 
 --
--- TOC entry 216 (class 1259 OID 16744)
+-- TOC entry 213 (class 1259 OID 17181)
 -- Name: episode_genre_episode_genre_id_seq; Type: SEQUENCE; Schema: public; Owner: admin
 --
 
@@ -253,8 +253,8 @@ CREATE SEQUENCE public.episode_genre_episode_genre_id_seq
 ALTER TABLE public.episode_genre_episode_genre_id_seq OWNER TO admin;
 
 --
--- TOC entry 3365 (class 0 OID 0)
--- Dependencies: 216
+-- TOC entry 3951 (class 0 OID 0)
+-- Dependencies: 213
 -- Name: episode_genre_episode_genre_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
 --
 
@@ -262,7 +262,7 @@ ALTER SEQUENCE public.episode_genre_episode_genre_id_seq OWNED BY public.episode
 
 
 --
--- TOC entry 214 (class 1259 OID 16724)
+-- TOC entry 214 (class 1259 OID 17183)
 -- Name: genre; Type: TABLE; Schema: public; Owner: admin
 --
 
@@ -277,7 +277,7 @@ CREATE TABLE public.genre (
 ALTER TABLE public.genre OWNER TO admin;
 
 --
--- TOC entry 215 (class 1259 OID 16727)
+-- TOC entry 215 (class 1259 OID 17191)
 -- Name: genre_genre_id_seq; Type: SEQUENCE; Schema: public; Owner: admin
 --
 
@@ -293,7 +293,7 @@ CREATE SEQUENCE public.genre_genre_id_seq
 ALTER TABLE public.genre_genre_id_seq OWNER TO admin;
 
 --
--- TOC entry 3366 (class 0 OID 0)
+-- TOC entry 3952 (class 0 OID 0)
 -- Dependencies: 215
 -- Name: genre_genre_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
 --
@@ -302,7 +302,7 @@ ALTER SEQUENCE public.genre_genre_id_seq OWNED BY public.genre.genre_id;
 
 
 --
--- TOC entry 211 (class 1259 OID 16670)
+-- TOC entry 216 (class 1259 OID 17193)
 -- Name: parent_genre; Type: TABLE; Schema: public; Owner: admin
 --
 
@@ -315,7 +315,7 @@ CREATE TABLE public.parent_genre (
 ALTER TABLE public.parent_genre OWNER TO admin;
 
 --
--- TOC entry 210 (class 1259 OID 16668)
+-- TOC entry 217 (class 1259 OID 17201)
 -- Name: parent_genre_parent_genre_id_seq; Type: SEQUENCE; Schema: public; Owner: admin
 --
 
@@ -331,8 +331,8 @@ CREATE SEQUENCE public.parent_genre_parent_genre_id_seq
 ALTER TABLE public.parent_genre_parent_genre_id_seq OWNER TO admin;
 
 --
--- TOC entry 3367 (class 0 OID 0)
--- Dependencies: 210
+-- TOC entry 3953 (class 0 OID 0)
+-- Dependencies: 217
 -- Name: parent_genre_parent_genre_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
 --
 
@@ -340,7 +340,7 @@ ALTER SEQUENCE public.parent_genre_parent_genre_id_seq OWNED BY public.parent_ge
 
 
 --
--- TOC entry 209 (class 1259 OID 16652)
+-- TOC entry 218 (class 1259 OID 17203)
 -- Name: setlist; Type: TABLE; Schema: public; Owner: admin
 --
 
@@ -355,7 +355,7 @@ CREATE TABLE public.setlist (
 ALTER TABLE public.setlist OWNER TO admin;
 
 --
--- TOC entry 208 (class 1259 OID 16650)
+-- TOC entry 219 (class 1259 OID 17208)
 -- Name: setlist_setlist_track_id_seq; Type: SEQUENCE; Schema: public; Owner: admin
 --
 
@@ -371,8 +371,8 @@ CREATE SEQUENCE public.setlist_setlist_track_id_seq
 ALTER TABLE public.setlist_setlist_track_id_seq OWNER TO admin;
 
 --
--- TOC entry 3368 (class 0 OID 0)
--- Dependencies: 208
+-- TOC entry 3954 (class 0 OID 0)
+-- Dependencies: 219
 -- Name: setlist_setlist_track_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
 --
 
@@ -380,7 +380,7 @@ ALTER SEQUENCE public.setlist_setlist_track_id_seq OWNED BY public.setlist.setli
 
 
 --
--- TOC entry 201 (class 1259 OID 16601)
+-- TOC entry 220 (class 1259 OID 17210)
 -- Name: song; Type: TABLE; Schema: public; Owner: admin
 --
 
@@ -393,7 +393,7 @@ CREATE TABLE public.song (
 ALTER TABLE public.song OWNER TO admin;
 
 --
--- TOC entry 207 (class 1259 OID 16634)
+-- TOC entry 221 (class 1259 OID 17218)
 -- Name: song_artist; Type: TABLE; Schema: public; Owner: admin
 --
 
@@ -407,7 +407,7 @@ CREATE TABLE public.song_artist (
 ALTER TABLE public.song_artist OWNER TO admin;
 
 --
--- TOC entry 206 (class 1259 OID 16632)
+-- TOC entry 222 (class 1259 OID 17223)
 -- Name: song_artist_song_artist_id_seq; Type: SEQUENCE; Schema: public; Owner: admin
 --
 
@@ -423,8 +423,8 @@ CREATE SEQUENCE public.song_artist_song_artist_id_seq
 ALTER TABLE public.song_artist_song_artist_id_seq OWNER TO admin;
 
 --
--- TOC entry 3369 (class 0 OID 0)
--- Dependencies: 206
+-- TOC entry 3955 (class 0 OID 0)
+-- Dependencies: 222
 -- Name: song_artist_song_artist_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
 --
 
@@ -432,7 +432,7 @@ ALTER SEQUENCE public.song_artist_song_artist_id_seq OWNED BY public.song_artist
 
 
 --
--- TOC entry 200 (class 1259 OID 16599)
+-- TOC entry 223 (class 1259 OID 17225)
 -- Name: song_song_id_seq; Type: SEQUENCE; Schema: public; Owner: admin
 --
 
@@ -448,8 +448,8 @@ CREATE SEQUENCE public.song_song_id_seq
 ALTER TABLE public.song_song_id_seq OWNER TO admin;
 
 --
--- TOC entry 3370 (class 0 OID 0)
--- Dependencies: 200
+-- TOC entry 3956 (class 0 OID 0)
+-- Dependencies: 223
 -- Name: song_song_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
 --
 
@@ -457,7 +457,7 @@ ALTER SEQUENCE public.song_song_id_seq OWNED BY public.song.song_id;
 
 
 --
--- TOC entry 3183 (class 2604 OID 16615)
+-- TOC entry 3749 (class 2604 OID 17311)
 -- Name: artist artist_id; Type: DEFAULT; Schema: public; Owner: admin
 --
 
@@ -465,7 +465,7 @@ ALTER TABLE ONLY public.artist ALTER COLUMN artist_id SET DEFAULT nextval('publi
 
 
 --
--- TOC entry 3188 (class 2604 OID 16695)
+-- TOC entry 3750 (class 2604 OID 17312)
 -- Name: crater_users user_id; Type: DEFAULT; Schema: public; Owner: admin
 --
 
@@ -473,7 +473,7 @@ ALTER TABLE ONLY public.crater_users ALTER COLUMN user_id SET DEFAULT nextval('p
 
 
 --
--- TOC entry 3191 (class 2604 OID 16769)
+-- TOC entry 3751 (class 2604 OID 17313)
 -- Name: dj dj_id; Type: DEFAULT; Schema: public; Owner: admin
 --
 
@@ -481,7 +481,7 @@ ALTER TABLE ONLY public.dj ALTER COLUMN dj_id SET DEFAULT nextval('public.dj_dj_
 
 
 --
--- TOC entry 3184 (class 2604 OID 16626)
+-- TOC entry 3752 (class 2604 OID 17314)
 -- Name: episode episode_id; Type: DEFAULT; Schema: public; Owner: admin
 --
 
@@ -489,7 +489,7 @@ ALTER TABLE ONLY public.episode ALTER COLUMN episode_id SET DEFAULT nextval('pub
 
 
 --
--- TOC entry 3192 (class 2604 OID 16780)
+-- TOC entry 3753 (class 2604 OID 17315)
 -- Name: episode_dj episode_dj_id; Type: DEFAULT; Schema: public; Owner: admin
 --
 
@@ -497,7 +497,7 @@ ALTER TABLE ONLY public.episode_dj ALTER COLUMN episode_dj_id SET DEFAULT nextva
 
 
 --
--- TOC entry 3190 (class 2604 OID 16749)
+-- TOC entry 3754 (class 2604 OID 17316)
 -- Name: episode_genre episode_genre_id; Type: DEFAULT; Schema: public; Owner: admin
 --
 
@@ -505,7 +505,7 @@ ALTER TABLE ONLY public.episode_genre ALTER COLUMN episode_genre_id SET DEFAULT 
 
 
 --
--- TOC entry 3189 (class 2604 OID 16729)
+-- TOC entry 3755 (class 2604 OID 17317)
 -- Name: genre genre_id; Type: DEFAULT; Schema: public; Owner: admin
 --
 
@@ -513,7 +513,7 @@ ALTER TABLE ONLY public.genre ALTER COLUMN genre_id SET DEFAULT nextval('public.
 
 
 --
--- TOC entry 3187 (class 2604 OID 16673)
+-- TOC entry 3756 (class 2604 OID 17318)
 -- Name: parent_genre parent_genre_id; Type: DEFAULT; Schema: public; Owner: admin
 --
 
@@ -521,7 +521,7 @@ ALTER TABLE ONLY public.parent_genre ALTER COLUMN parent_genre_id SET DEFAULT ne
 
 
 --
--- TOC entry 3186 (class 2604 OID 16655)
+-- TOC entry 3757 (class 2604 OID 17319)
 -- Name: setlist setlist_track_id; Type: DEFAULT; Schema: public; Owner: admin
 --
 
@@ -529,7 +529,7 @@ ALTER TABLE ONLY public.setlist ALTER COLUMN setlist_track_id SET DEFAULT nextva
 
 
 --
--- TOC entry 3182 (class 2604 OID 16604)
+-- TOC entry 3758 (class 2604 OID 17320)
 -- Name: song song_id; Type: DEFAULT; Schema: public; Owner: admin
 --
 
@@ -537,7 +537,7 @@ ALTER TABLE ONLY public.song ALTER COLUMN song_id SET DEFAULT nextval('public.so
 
 
 --
--- TOC entry 3185 (class 2604 OID 16637)
+-- TOC entry 3759 (class 2604 OID 17321)
 -- Name: song_artist song_artist_id; Type: DEFAULT; Schema: public; Owner: admin
 --
 
@@ -545,7 +545,16 @@ ALTER TABLE ONLY public.song_artist ALTER COLUMN song_artist_id SET DEFAULT next
 
 
 --
--- TOC entry 3196 (class 2606 OID 16620)
+-- TOC entry 3761 (class 2606 OID 17136)
+-- Name: artist artist_artist_name_key; Type: CONSTRAINT; Schema: public; Owner: admin
+--
+
+ALTER TABLE ONLY public.artist
+    ADD CONSTRAINT artist_artist_name_key UNIQUE (artist_name);
+
+
+--
+-- TOC entry 3763 (class 2606 OID 17239)
 -- Name: artist artist_pkey; Type: CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -554,7 +563,7 @@ ALTER TABLE ONLY public.artist
 
 
 --
--- TOC entry 3206 (class 2606 OID 16700)
+-- TOC entry 3765 (class 2606 OID 17241)
 -- Name: crater_users crater_users_pkey; Type: CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -563,7 +572,25 @@ ALTER TABLE ONLY public.crater_users
 
 
 --
--- TOC entry 3212 (class 2606 OID 16774)
+-- TOC entry 3767 (class 2606 OID 17146)
+-- Name: crater_users crater_users_user_email_key; Type: CONSTRAINT; Schema: public; Owner: admin
+--
+
+ALTER TABLE ONLY public.crater_users
+    ADD CONSTRAINT crater_users_user_email_key UNIQUE (user_email);
+
+
+--
+-- TOC entry 3769 (class 2606 OID 17156)
+-- Name: dj dj_dj_name_key; Type: CONSTRAINT; Schema: public; Owner: admin
+--
+
+ALTER TABLE ONLY public.dj
+    ADD CONSTRAINT dj_dj_name_key UNIQUE (dj_name);
+
+
+--
+-- TOC entry 3771 (class 2606 OID 17243)
 -- Name: dj dj_pkey; Type: CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -572,7 +599,7 @@ ALTER TABLE ONLY public.dj
 
 
 --
--- TOC entry 3214 (class 2606 OID 16782)
+-- TOC entry 3777 (class 2606 OID 17245)
 -- Name: episode_dj episode_dj_pkey; Type: CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -581,7 +608,25 @@ ALTER TABLE ONLY public.episode_dj
 
 
 --
--- TOC entry 3210 (class 2606 OID 16751)
+-- TOC entry 3779 (class 2606 OID 17171)
+-- Name: episode_dj episode_dj_uniqueness; Type: CONSTRAINT; Schema: public; Owner: admin
+--
+
+ALTER TABLE ONLY public.episode_dj
+    ADD CONSTRAINT episode_dj_uniqueness UNIQUE (dj_id, episode_id);
+
+
+--
+-- TOC entry 3773 (class 2606 OID 17323)
+-- Name: episode episode_episode_url_key; Type: CONSTRAINT; Schema: public; Owner: admin
+--
+
+ALTER TABLE ONLY public.episode
+    ADD CONSTRAINT episode_episode_url_key UNIQUE (episode_url);
+
+
+--
+-- TOC entry 3781 (class 2606 OID 17247)
 -- Name: episode_genre episode_genre_pkey; Type: CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -590,7 +635,16 @@ ALTER TABLE ONLY public.episode_genre
 
 
 --
--- TOC entry 3198 (class 2606 OID 16631)
+-- TOC entry 3783 (class 2606 OID 17180)
+-- Name: episode_genre episode_genre_uniqueness; Type: CONSTRAINT; Schema: public; Owner: admin
+--
+
+ALTER TABLE ONLY public.episode_genre
+    ADD CONSTRAINT episode_genre_uniqueness UNIQUE (episode_id, genre_id);
+
+
+--
+-- TOC entry 3775 (class 2606 OID 17249)
 -- Name: episode episode_pkey; Type: CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -599,7 +653,16 @@ ALTER TABLE ONLY public.episode
 
 
 --
--- TOC entry 3208 (class 2606 OID 16731)
+-- TOC entry 3785 (class 2606 OID 17190)
+-- Name: genre genre_genre_name_key; Type: CONSTRAINT; Schema: public; Owner: admin
+--
+
+ALTER TABLE ONLY public.genre
+    ADD CONSTRAINT genre_genre_name_key UNIQUE (genre_name);
+
+
+--
+-- TOC entry 3787 (class 2606 OID 17251)
 -- Name: genre genre_pkey; Type: CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -608,7 +671,16 @@ ALTER TABLE ONLY public.genre
 
 
 --
--- TOC entry 3204 (class 2606 OID 16678)
+-- TOC entry 3789 (class 2606 OID 17200)
+-- Name: parent_genre parent_genre_parent_genre_name_key; Type: CONSTRAINT; Schema: public; Owner: admin
+--
+
+ALTER TABLE ONLY public.parent_genre
+    ADD CONSTRAINT parent_genre_parent_genre_name_key UNIQUE (parent_genre_name);
+
+
+--
+-- TOC entry 3791 (class 2606 OID 17253)
 -- Name: parent_genre parent_genre_pkey; Type: CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -617,7 +689,7 @@ ALTER TABLE ONLY public.parent_genre
 
 
 --
--- TOC entry 3202 (class 2606 OID 16657)
+-- TOC entry 3793 (class 2606 OID 17255)
 -- Name: setlist setlist_pkey; Type: CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -626,7 +698,16 @@ ALTER TABLE ONLY public.setlist
 
 
 --
--- TOC entry 3200 (class 2606 OID 16639)
+-- TOC entry 3795 (class 2606 OID 17207)
+-- Name: setlist setlist_uniqueness; Type: CONSTRAINT; Schema: public; Owner: admin
+--
+
+ALTER TABLE ONLY public.setlist
+    ADD CONSTRAINT setlist_uniqueness UNIQUE (song_artist_id, episode_id, setlist_seq);
+
+
+--
+-- TOC entry 3801 (class 2606 OID 17257)
 -- Name: song_artist song_artist_pkey; Type: CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -635,7 +716,16 @@ ALTER TABLE ONLY public.song_artist
 
 
 --
--- TOC entry 3194 (class 2606 OID 16609)
+-- TOC entry 3803 (class 2606 OID 17222)
+-- Name: song_artist song_artist_uniqueness; Type: CONSTRAINT; Schema: public; Owner: admin
+--
+
+ALTER TABLE ONLY public.song_artist
+    ADD CONSTRAINT song_artist_uniqueness UNIQUE (song_id, artist_id);
+
+
+--
+-- TOC entry 3797 (class 2606 OID 17259)
 -- Name: song song_pkey; Type: CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -644,7 +734,16 @@ ALTER TABLE ONLY public.song
 
 
 --
--- TOC entry 3223 (class 2606 OID 16783)
+-- TOC entry 3799 (class 2606 OID 17217)
+-- Name: song song_song_name_key; Type: CONSTRAINT; Schema: public; Owner: admin
+--
+
+ALTER TABLE ONLY public.song
+    ADD CONSTRAINT song_song_name_key UNIQUE (song_name);
+
+
+--
+-- TOC entry 3805 (class 2606 OID 17260)
 -- Name: episode_dj episode_dj_dj_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -653,7 +752,7 @@ ALTER TABLE ONLY public.episode_dj
 
 
 --
--- TOC entry 3224 (class 2606 OID 16788)
+-- TOC entry 3806 (class 2606 OID 17265)
 -- Name: episode_dj episode_dj_episode_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -662,7 +761,7 @@ ALTER TABLE ONLY public.episode_dj
 
 
 --
--- TOC entry 3221 (class 2606 OID 16752)
+-- TOC entry 3807 (class 2606 OID 17270)
 -- Name: episode_genre episode_genre_episode_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -671,7 +770,7 @@ ALTER TABLE ONLY public.episode_genre
 
 
 --
--- TOC entry 3222 (class 2606 OID 16757)
+-- TOC entry 3808 (class 2606 OID 17275)
 -- Name: episode_genre episode_genre_genre_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -680,7 +779,7 @@ ALTER TABLE ONLY public.episode_genre
 
 
 --
--- TOC entry 3215 (class 2606 OID 16793)
+-- TOC entry 3804 (class 2606 OID 17280)
 -- Name: episode fk_episode_dj; Type: FK CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -689,7 +788,7 @@ ALTER TABLE ONLY public.episode
 
 
 --
--- TOC entry 3220 (class 2606 OID 16739)
+-- TOC entry 3809 (class 2606 OID 17285)
 -- Name: genre fk_genre_parent; Type: FK CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -698,7 +797,7 @@ ALTER TABLE ONLY public.genre
 
 
 --
--- TOC entry 3219 (class 2606 OID 16663)
+-- TOC entry 3810 (class 2606 OID 17290)
 -- Name: setlist setlist_episode_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -707,7 +806,7 @@ ALTER TABLE ONLY public.setlist
 
 
 --
--- TOC entry 3218 (class 2606 OID 16658)
+-- TOC entry 3811 (class 2606 OID 17295)
 -- Name: setlist setlist_song_artist_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -716,7 +815,7 @@ ALTER TABLE ONLY public.setlist
 
 
 --
--- TOC entry 3217 (class 2606 OID 16645)
+-- TOC entry 3812 (class 2606 OID 17300)
 -- Name: song_artist song_artist_artist_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -725,7 +824,7 @@ ALTER TABLE ONLY public.song_artist
 
 
 --
--- TOC entry 3216 (class 2606 OID 16640)
+-- TOC entry 3813 (class 2606 OID 17305)
 -- Name: song_artist song_artist_song_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: admin
 --
 
@@ -733,7 +832,19 @@ ALTER TABLE ONLY public.song_artist
     ADD CONSTRAINT song_artist_song_id_fkey FOREIGN KEY (song_id) REFERENCES public.song(song_id);
 
 
--- Completed on 2021-10-28 17:39:57 CEST
+--
+-- TOC entry 3945 (class 0 OID 0)
+-- Dependencies: 3
+-- Name: SCHEMA public; Type: ACL; Schema: -; Owner: postgres_admin
+--
+
+REVOKE ALL ON SCHEMA public FROM rdsadmin;
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+GRANT ALL ON SCHEMA public TO postgres_admin;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+-- Completed on 2021-11-02 21:43:52 CET
 
 --
 -- PostgreSQL database dump complete

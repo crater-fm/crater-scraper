@@ -44,3 +44,14 @@ INNER JOIN
 INNER JOIN
     artist ON song_artist.artist_id = artist.artist_id
 ORDER BY setlist.episode_id, setlist.setlist_seq;
+
+/* Show Genre data */
+SELECT
+	episode_genre.episode_genre_id,
+	episode.episode_name,
+	genre.genre_name
+FROM episode_genre
+INNER JOIN
+	episode ON episode_genre.episode_id = episode.episode_id
+INNER JOIN
+	genre ON episode_genre.genre_id = genre.genre_id;
