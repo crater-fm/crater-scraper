@@ -28,17 +28,17 @@ async function runScraper(nestedArray) {
     // Loop through array of URLs and run scrapeNTS
     console.log(nestedArray.length, ' URLs to be scraped')
     
-    let counter  = 0;
-
-    for (const item of nestedArray) {
+    // Last successful scrape was index 7134, so start next session from that index
+    for (var i=7134, len = nestedArray.length; i<len; i++) {
+        const item = nestedArray[i]; 
         const djName = item[0];
         const url = item[1];
 
         try {
             var result = await scraper.scrapeNTS(url, djName, pool)
 
-            console.log(`URL with index ${counter} scraped into db: ${url}`)
-            counter++
+            console.log(`URL with index ${i} scraped into db: ${url}`)
+            
 /*
             // Wait before scraping the next URL to avoid getting IP flagged
             function sleep(milliseconds) {

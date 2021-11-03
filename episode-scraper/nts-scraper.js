@@ -16,7 +16,7 @@ module.exports = {
         async function scrapeHtmlData(episodeUrl) {
             try {
                 // Fetch HTML from URL
-                const { data } = await axios.get(episodeUrl, {timeout: 5000});
+                const { data } = await axios.get(episodeUrl, {timeout: 10000});
                 // Load html markup
                 const $ = await cheerio.load(data);
                 var reactState = await $("#react-state").html();
