@@ -3,6 +3,7 @@ This is a web scraper & data pipeline to populate the PostgreSQL backend databas
 
 ## More info
 More info on the project here:
+<br>
 [Front-end Repo](https://github.com/drex04/crater-frontend)
 <br>
 [Back-end Repo](https://github.com/crater-fm/crater-web-app)
