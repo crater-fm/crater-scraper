@@ -1,0 +1,6 @@
+CREATE OR REPLACE q_dj_episodecount AS
+SELECT "dj"."dj_id",
+COUNT("episode_dj"."episode_id") AS "episode_count"
+FROM "dj"
+LEFT OUTER JOIN "episode_dj" ON ("dj"."dj_id" = "episode_dj"."dj_id")
+GROUP BY "dj"."dj_id";

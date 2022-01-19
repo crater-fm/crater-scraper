@@ -1,0 +1,5 @@
+CREATE OR REPLACE VIEW q_artist_playcount AS
+SELECT "song_artist"."artist_id",
+COUNT("song_artist"."artist_id") AS "play_count"
+FROM "song_artist"
+GROUP BY "song_artist"."artist_id";

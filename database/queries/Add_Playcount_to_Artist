@@ -1,0 +1,5 @@
+UPDATE artist
+SET    play_count = q_artist_playcount.play_count
+FROM   q_artist_playcount
+WHERE  artist.artist_id = q_artist_playcount.artist_id
+AND    artist.play_count IS DISTINCT FROM q_artist_playcount.play_count;

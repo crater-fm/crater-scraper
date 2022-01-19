@@ -1,0 +1,5 @@
+UPDATE dj
+SET    episode_count = q_dj_episodecount.episode_count
+FROM   q_dj_episodecount
+WHERE  dj.dj_id = q_dj_episodecount.dj_id
+AND    dj.episode_count IS DISTINCT FROM q_dj_episodecount.episode_count;
